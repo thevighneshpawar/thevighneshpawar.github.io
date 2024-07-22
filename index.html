@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vighnesh</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/f0888c81d1.js" crossorigin="anonymous"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="container mx-auto px-4 bg-black">
+  <div class="flex lg:flex-row flex-col lg:gap-8 mt-12 lg:m-4 ">
+
+<div class="flex relative profile bg-[#1e1e1f] lg:items-center border lg:w-1/4 border-[#535353] rounded-3xl p-4 gap-8 lg:sticky lg:top-12 flex-col h-full">
+  <div class="flex items-center mb-15 gap-4 lg:mt-0 mt-3 lg:flex-col ">
+      <div class="avtar-bg lg:mt-4">
+          <img src="assets/images/my-avatar.png" alt="">
+      </div>
+     <div class="flex flex-col lg:gap-3 gap-2 lg:mt-0 ht  lg:items-center">
+        <h1 class="lg:text-3xl n-size font-medium whitespace-nowrap lg:font-semibold">Vighnesh Pawar</h1>
+       <div class="flex flex-col gap-2 ">
+          <p class="text-sm  text-white lg:text-center font-light">
+            <span class="bg-[#3b3a3a] m-size px-4 py-1 rounded-xl inline-block">CSE Graduate</span>
+         </p>
+         <p class="text-sm  text-white lg:text-center font-light">
+          <span class="bg-[#3b3a3a] m-size px-2 py-1 rounded-xl inline-block">Open For Opportunities</span>
+         </p>
+       </div>
+    </div>
+
+      
+  </div>
+
+  <div class="flex absolute lg:hidden bg-[#3b3a3a] top-0 right-0 rounded-2xl border-l lg:border-b border-[#ffb005]">
+    <button id="togglebtn">
+      <ion-icon name="chevron-down-outline" class="text-[#ffb005] text-sm px-4 py-1"></ion-icon>
+    </button>
+  </div>
+  
+
+    <div class="lg:block hidden t-size" id="toggleele">
+
+      <div class="flex flex-col gap-5">
+        <div class="flex gap-5">
+          <div class=" relative">
+            <ion-icon name="mail-outline" class="text-[#ffb005] text-3xl"></ion-icon>
+          </div>
+          <div class="flex flex-col">
+            <p>Email</p>
+            <a href="mailto:vighneshpawar004@gmail.com">
+              <p class="text-white">vighneshpawar0...</p></a>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="relative">
+            <ion-icon name="phone-portrait-outline"class="text-[#ffb005] text-3xl"></ion-icon>
+          </div>
+          <div class="flex flex-col">
+            <p>Phone</p>
+            <p>+91-95XXXXXX5</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="relative">
+            <ion-icon name="logo-linkedin"class="text-[#ffb005] text-3xl"></ion-icon>
+          </div>
+          <div class="flex flex-col">
+            <p>Linkedin</p>
+            <a href="https://www.linkedin.com/in/vighnesh-pawar/">Vighnesh-Pawar</a>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="relative">
+            <ion-icon name="logo-github"class="text-[#ffb005] text-3xl"></ion-icon>
+          </div>
+          <div class="flex flex-col">
+            <p>Github</p>
+            <a href="https://github.com/thevighneshpawar">Thevighneshpawar</a>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="relative">
+            <ion-icon name="calendar-clear-outline"class="text-[#ffb005] text-3xl"></ion-icon>
+          </div>
+          <div class="flex flex-col">
+            <p>BIRTHDAY</p>
+            <p>March 2, 2004</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="relative">
+            <ion-icon name="location-outline"class="text-[#ffb005] text-3xl"></ion-icon>
+          </div>
+          <div class="flex flex-col">
+            <p>Location</p>
+            <p>Vita ,Maharashtra</p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+     </div>
+
+     <div class="info bg-[#1e1e1f] container p-8 rounded-3xl items-center border mt-8 lg:w-3/4 border-[#535353] ">
+      <section id="about-me">
+        <h1 class="text-3xl font-semibold">About me</h1>
+        <hr class="w-1/12 my-4 border-4 border-[#ffb005] rounded-3xl">
+        <p class="leading-6">
+          I am seeking a dynamic and challenging position in the field of computer science and technology, where I can leverage my strong educational background in B.Tech Computer Science, coupled with my hands-on experience in software development and cloud computing.
+        </p>
+        <br>
+        <p class="leading-6">
+          Eager to contribute my skills in a collaborative and innovative work environment, I aim to apply my knowledge of programming languages, databases, and cloud services to create impactful solutions. With a keen interest in continuous learning and problem-solving, I aspire to contribute effectively to a forward-thinking team and grow professionally in a dynamic industry.
+        </p>
+        <br>
+        <button class="lg:text-xl md:text-xl text-sm font-semibold bg-[#ffb005] px-4 py-2 rounded-xl mb-4">
+          Download Resume
+        </button>
+      </section>
+
+      <section class="experience relative">
+        <div class="flex items-center my-4 gap-4">
+          <ion-icon name="book-outline" class="text-[#ffb005] text-3xl"></ion-icon>
+          <h1 class="text-3xl font-semibold">Experience</h1>
+        </div>
+        
+        <div class="absolute w-[2px] bg-[#535353] lg:h-[60%] h-[15%] left-[13px] top-7  rounded-xl"></div>
+        <div class="bg-[#ffb005] w-2 h-2 sh  tp rounded-full absolute left-[13px] top-16 transform -translate-x-1/2"></div>
+        <!-- <div class="bg-[#ffb005] w-2 h-2 sh rounded-full absolute left-[13px] top-[15.5rem] transform -translate-x-1/2"></div> -->
+        <div class="my-4 pl-8 relative">
+          
+         
+          <div class="mb-8">
+            <div class="relative flex items-center mb-2">
+              
+              <h4 class="text-xl font-semibold ml-8">Tech spot Infotech Pvt. Ltd, Sangli, Maharashtra</h4>
+            </div>
+            <div class="ml-8">
+              <p class="text-[#ffb005]">Feb 2024 — May 2024</p>
+              <p class="font-semibold">- Web Development Intern</p>
+              <ul class="list-disc pl-5">
+                <li class="lg:list-item hidden">Collaborated with the Development team and worked with frontend technologies to develop and maintain the backend using PHP.</li>
+                <li>frontend </li>
+              </ul>
+            </div>
+          </div>
+
+       
+      </section>
+
+      <section class="education relative">
+        <div class="flex items-center my-4 gap-4">
+          <ion-icon name="book-outline" class="text-[#ffb005] text-3xl"></ion-icon>
+          <h1 class="text-3xl font-semibold">Education</h1>
+        </div>
+        
+        <div class="absolute w-[2px] bg-[#535353] h-[73%] left-[13px] top-7  rounded-xl"></div>
+        <div class="bg-[#ffb005] w-2 h-2 sh  rounded-full absolute left-[13px] top-16  transform -translate-x-1/2"></div>
+        <div class="bg-[#ffb005] w-2 h-2 sh rounded-full absolute left-[13px] lg:top-[12rem] md:top-[12rem] top-[15rem] transform -translate-x-1/2"></div>
+        <div class="bg-[#ffb005] w-2 h-2  sh rounded-full absolute left-[13px] lg:bottom-[5.1rem] md:bottom-[5.1rem] bottom-[6.5rem] transform -translate-x-1/2"></div>
+        <div class="my-4 pl-8 relative">
+          
+         
+          <div class="mb-8">
+            <div class="relative flex items-center mb-2">
+              
+              <h4 class="lg:text-xl font-semibold ml-8">Adarsh Institute of technology and
+                research centre,vita</h4>
+            </div>
+            <div class="ml-8">
+              <p class="text-[#ffb005]">2021-2025</p>
+              <ul class="list-disc text-sm pl-5">
+                <li>BTECH in Computer Science And Engineering.</li>
+                <li>CGPA : 8.48 </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mb-8">
+            <div class="relative flex items-center mb-2">
+              <h4 class="lg:text-xl font-semibold ml-8">Dr.Patangrao kadam Junior college ,Kundal</h4>
+            </div>
+            <div class="ml-8">
+              <p class="text-[#ffb005]">2018 - 2020</p>
+              
+              <ul class="list-disc text-sm pl-5">
+                <li>Higher Secondary (XII HSC)</li>
+                <li> Percentage : 83.2%</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mb-8">
+            <div class="relative flex items-center mb-2">
+              <h4 class="lg:text-xl font-semibold ml-8">Modern Education of Society ,Vita</h4>
+            </div>
+            <div class="ml-8">
+              <p class="text-[#ffb005]">2008 - 2018</p>
+              
+              <ul class="list-disc text-sm pl-5">
+                <li>School Secondary (X SSC)</li>
+                <li> Percentage : 87.4%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-skills">
+        <h1 class="text-3xl font-semibold">My Skills</h1>
+        <hr class="w-1/12 my-6 border-4 border-[#ffb005] rounded-3xl">
+        <div class="flex flex-wrap gap-8">
+          <div class="skill-name py-4 px-8 rounded-xl flex gap-3">
+            <ion-icon name="logo-html5" class="text-3xl text-[#ffb005]"></ion-icon>
+            <h5 class=" text-xl font-semibold">HTML</h5>
+          </div>
+          <div class="skill-name py-4 px-8 rounded-xl flex gap-3">
+            <ion-icon name="logo-css3" class="text-4xl text-[#ffb005]"></ion-icon>
+            <h5 class=" text-xl font-semibold">CSS</h5>
+          </div>
+          <div class="skill-name py-4 px-8 rounded-xl flex gap-3">
+            <ion-icon name="logo-nodejs" class="text-4xl text-[#ffb005]"></ion-icon>
+            <h5 class=" text-xl font-semibold">JavaScript</h5>
+          </div>
+          <div class="skill-name py-4 px-8 rounded-xl flex gap-3">
+            <ion-icon name="logo-react" class="text-4xl text-[#ffb005]"></ion-icon>
+            <h5 class=" text-xl font-semibold">React Js</h5>
+          </div>
+          <div class="skill-name py-4 px-8 rounded-xl flex gap-3">
+            <ion-icon name="logo-nodejs" class="text-4xl text-[#ffb005]"></ion-icon>
+            <h5 class=" text-xl font-semibold">Node Js</h5>
+          </div>
+          <div class="skill-name py-4 px-8 rounded-xl flex gap-3">
+            <ion-icon name="code-outline" class="text-4xl text-[#ffb005]"></ion-icon>
+            <h5 class=" text-xl font-semibold">C/C++</h5>
+          </div>
+          <div class="skill-name py-4 px-8 rounded-xl flex gap-3">
+            <ion-icon name="analytics-outline" class="text-4xl text-[#ffb005]"></ion-icon>
+            <h5 class=" text-xl font-semibold">Data Structures And Algorithms</h5>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <h1 class="text-3xl font-semibold mt-8">My Projects</h1>
+        <hr class="w-1/12 my-6 border-4 border-[#ffb005] rounded-3xl">
+
+        <div class="swiper-container mt-12 overflow-hidden relative">
+
+
+          <div class="swiper-wrapper flex transition-transform duration-700 ease-out">
+
+            <div class="swiper-slide flex justify-center w-full flex-shrink-0">
+              <div class="flex gap-3 lg:w-[70%] flex-col lg:flex-row">
+                <img src="assets/images/likes-inc.png" class="lg:w-[40%] w-[70%] mx-auto border-2 border-[#d6d6d6] rounded-xl" alt="">
+                <div class="flex gap-5 flex-col">
+                  <div class="text-center lg:text-left">
+                    <h5 class="text-2xl ">Automated Payment For Smm order</h5>
+                    <p class="leading-6">Get set Likes.</p>
+                    <p class="text-[#ffb005] font-semibold">Tech stack: React JS, Node JS, Firebase</p>
+                  </div>
+                  <div class="btns flex gap-3 justify-center lg:justify-start">
+                    <button class="text-xl hidden font-semibold bg-[#ffb005] rounded-xl px-3 py-1"><a href="https://github.com/thevighneshpawar/code-editor">Github</a></button>
+                    <button class="text-xl  font-semibold bg-[#ffb005] rounded-xl px-3 py-1"><a href="https://autolikes.vercel.app/">Try it</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide flex justify-center w-full flex-shrink-0">
+              <div class="flex gap-3 lg:w-[70%] flex-col lg:flex-row">
+                <img src="assets/images/code-editor.png" class="lg:w-[40%] w-[70%] mx-auto border-2 border-[#d6d6d6] rounded-xl" alt="">
+                <div class="flex gap-5 flex-col">
+                  <div class="text-center lg:text-left">
+                    <h5 class="text-2xl ">Online Code Compiler</h5>
+                    <p class="leading-6">You can share your code live, also it helps to execute the code in C, C++, Java, and Python.</p>
+                    <p class="text-[#ffb005] font-semibold">Tech stack: React JS, Node JS, Socket</p>
+                  </div>
+                  <div class="btns flex gap-3 justify-center lg:justify-start">
+                    <button class="text-xl font-semibold bg-[#ffb005] rounded-xl px-3 py-1"><a href="https://github.com/thevighneshpawar/code-editor">Github</a></button>
+                    <button class="text-xl font-semibold bg-[#ffb005] rounded-xl px-3 py-1"><a href="https://code-editor-mwsb.onrender.com/">Try it</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            
+
+
+            <div class="swiper-slide flex justify-center w-full flex-shrink-0">
+              <div class="flex gap-3 lg:w-[70%] flex-col lg:flex-row">
+                <img src="assets/images/personal-portfolio.png" class="lg:w-[40%] w-[70%] mx-auto border-2 border-[#d6d6d6] rounded-xl" alt="">
+                <div class="flex gap-5 flex-col">
+                  <div class="text-center lg:text-left">
+                    <h5 class="text-2xl ">Personal Portfolio website</h5>
+                    <p class="leading-6">This is simple portfolio website by using HTML,css and Tailwindcss.</p>
+                    <p class="text-[#ffb005] font-semibold">Tech stack: HTML, TAILWINDCSS ,JS</p>
+                  </div>
+                  <div class="btns flex gap-3 justify-center lg:justify-start">
+                    <button class="text-xl font-semibold bg-[#ffb005] rounded-xl px-3 py-1"><a href="https://github.com/thevighneshpawar/personalportfolio">Github</a></button>
+                    <button class="text-xl font-semibold bg-[#ffb005] rounded-xl px-3 py-1"><a href="#">Try it</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide flex justify-center w-full flex-shrink-0">
+              <div class="flex gap-3 lg:w-[70%] flex-col lg:flex-row">
+                <img src="assets/images/notes-web.png" class="lg:w-[40%] w-[70%] mx-auto border-2 border-[#d6d6d6] rounded-xl" alt="">
+                <div class="flex gap-5 flex-col">
+                  <div class="text-center lg:text-left">
+                    <h5 class="text-2xl ">College Notes Website</h5>
+                    <p class="leading-6">You can share your code live, also it helps to execute the code in C, C++, Java, and Python.</p>
+                    <p class="text-[#ffb005] font-semibold">Tech stack: HTML,CSS,JS</p>
+                  </div>
+                  <div class="btns flex gap-3 justify-center lg:justify-start">
+                    <button class="text-xl font-semibold bg-[#ffb005] rounded-xl px-3 py-1"><a href="https://github.com/thevighneshpawar/collegenotes">Github</a></button>
+                    <button class="text-xl font-semibold bg-[#ffb005] rounded-xl px-3 py-1"><a href="https://batunotes.netlify.app/">Try it</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          
+
+           <!-- Navigation buttons -->
+      <button class="swiper-button-prev  absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full"><ion-icon name="arrow-back-outline" class="text-[#ffb005] lg:text-3xl"></ion-icon></button>
+      <button class="swiper-button-next absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full"><ion-icon name="arrow-forward-outline" class="text-[#ffb005] lg:text-3xl"></ion-icon></button>
+        </div>
+
+      </section>
+
+      <section class="contact-me">
+
+        <h1 class="text-3xl font-semibold mt-8">Contact me</h1>
+        <hr class="w-1/12 my-6 border-4 border-[#ffb005] rounded-3xl">
+      
+        <form action="mailto:vighnupawar2004@gmail.com" method="post" enctype="text/plain">
+          <div class="flex gap-4 mb-4">
+            <div class="w-1/2">
+              <label for="fullName" class="sr-only">Full Name</label>
+              <input type="text" name="fullName" id="fullName" placeholder="Full Name" 
+              class="border border-red-300 outline-none bg-transparent w-full p-4 rounded-xl">
+            </div>
+            <div class="w-1/2">
+              <label for="email" class="sr-only">Email</label>
+              <input type="email" name="email" id="email" placeholder="Email" 
+              class="border border-red-300 outline-none bg-transparent w-full p-4 rounded-xl">
+            </div>
+          </div>
+          <label for="message" class="sr-only">Message</label>
+          <textarea name="message" id="message" placeholder="Message" rows="7"
+          class="border border-red-300 outline-none bg-transparent w-full p-4 rounded-xl"></textarea>
+          <button type="submit" class="text-xl font-semibold bg-[#ffb005] px-4 py-2 rounded-xl mt-4 float-right">Send Message</button>
+        </form>
+      </section>
+      
+     </div>
+  </div>
+
+  <script src="assets/index.js"></script>
+</body>
+</html>
