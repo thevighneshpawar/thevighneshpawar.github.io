@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+h1{
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary-text-color: #fafafa;
+  --secondary-text-color: #d6d6d6;
+  --third-color: #ffb005;
+  --third-dark-color: #ceb15a;
+  --padding-inline-section: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-text-color);
+  height: 100%;
+  overflow: auto;
+}
+
+html {
+  height: 100%;
+  overflow: auto;
+}
+
+p {
+  font-family: "poppins", sans-serif;
+  color: var(--secondary-text-color);
+  line-height: 1.3rem;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* profile */
+
+.ico {
+  border: solid 1px var(--secondary-text-color);
+  width: 48px;
+  border-radius: 12px;
+  background: linear-gradient(
+    to bottom right,
+    hsl(0, 0%, 25%) 0%,
+    hsla(0, 0%, 25%, 0) 50%
+  );
+}
+
+.avtar-bg {
+  background: linear-gradient(
+    to bottom right,
+    hsl(240, 1%, 25%) 3%,
+    hsl(0, 0%, 19%) 97%
+  );
+  width: 150px;
+  height: 140px;
+  border-radius: 18px;
+ 
+}
+small-high{
+  /* background:hsl(240, 1%, 17%) ;
+  padding: 5px 18px;
+  border-radius: 8px; */
+}
+.
+
+.profile, .info {
+  height: auto; /* Ensure the containers grow with content */
+}
+
+.sh{
+  box-shadow: 0 0 15px 5px rgba(255, 176, 5, 0.6);;
+}
+
+.skill-name{
+  background: linear-gradient( to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50% );
+  box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+}
+
+.t-size{
+  font-size: 14px;
+}
+.mid {
+  top: 16.2em; /* Resetting initial top value */
+}
+
+.ed {
+  bottom: 5.5rem; /* Resetting initial bottom value */
+}
+
+.tp {
+  top: 6.5rem; /* Resetting initial top value */
+}
+/*media queries */
+
+@media(max-width:35em){
+  .avtar-bg{
+    width: 80px;
+    height: 80px;
+  }
+
+  .small-high{
+    padding:0;
+  }
+
+  .m-size{
+    font-size: 12px;
+  }
+
+  .n-size{
+    font-size: 20px;
+  }
+
+  /* .ht{
+    margin-top: 5px;
+  } */
+
+  .mid{
+    top:50rem;
+  }
+
+  .ed{
+ bottom: 15rem;
+  }
+
+  .tp{
+    top:9rem;
+  }
+ .ht{
+  height: 85%;
+ }
+
+}
+@media(min-width:35em) and (max-width:59em){
+    
+}
