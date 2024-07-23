@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextButton = document.querySelector('.swiper-button-next');
     const toggleele = document.querySelector('#toggleele');
     const togglebtn = document.querySelector('#togglebtn')
+   
 
   
     let currentIndex = 0;
@@ -62,5 +63,13 @@ document.addEventListener("DOMContentLoaded", () => {
       toggleele.classList.toggle('hidden');
       toggleele.classList.toggle('visible');
     })
+
+    document.addEventListener('visibilitychange', function() {
+      if (document.visibilityState === 'hidden') {
+        document.title = 'Hey Come back :( ';
+      } else {
+        document.title = 'Vighnesh';
+      }
+    });
   });
   
