@@ -12,22 +12,23 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css">
   <link rel="stylesheet" href="assets/style.css">
 </head>
-<body class="container mx-auto px-4 bg-black">
+<body class="container mx-auto px-4 bg-gray-900">
   <div class="flex lg:flex-row flex-col lg:gap-8 mt-12 lg:m-4 ">
 
-<div class="flex relative profile bg-[#1e1e1f] lg:items-center border lg:w-1/4 border-[#535353] rounded-3xl p-4 gap-8 lg:sticky lg:top-12 flex-col h-full">
+<div class="flex relative profile bg-gray-800 lg:items-center border lg:w-1/4 border-gray-700 rounded-3xl p-4 gap-8 lg:sticky lg:top-12 flex-col h-full">
   <div class="flex items-center mb-15 gap-4 lg:mt-0 mt-3 lg:flex-col ">
-      <div class="avtar-bg lg:mt-4">
+      <div class="avtar-bg bg-gray-700 lg:mt-4">
           <img src="assets/images/my-avatar.png" alt="">
       </div>
      <div class="flex flex-col lg:gap-3 gap-2 lg:mt-0 ht  lg:items-center">
         <h1 class="lg:text-3xl n-size font-medium whitespace-nowrap lg:font-semibold">Vighnesh Pawar</h1>
        <div class="flex flex-col gap-2 ">
-          <p class="text-sm  text-white lg:text-center font-light">
-            <span class="bg-[#3b3a3a] m-size px-4 py-1 rounded-xl inline-block">CSE Graduate</span>
-         </p>
-         <p class="text-sm  text-white lg:text-center font-light">
-          <span class="bg-[#3b3a3a] m-size px-2 py-1 rounded-xl inline-block">Open For Opportunities</span>
+        <p class="text-sm text-gray-300 lg:text-center font-light">
+          <span class="bg-gray-700 px-4 py-1 rounded-xl inline-block">CSE Graduate</span>
+       </p>
+       <p class="text-sm text-gray-300 lg:text-center font-light">
+        <span class="bg-gray-700 px-2 py-1 rounded-xl inline-block">Open For Opportunities</span>
+       </p>
          </p>
        </div>
     </div>
@@ -110,7 +111,7 @@
     </div>
      </div>
 
-     <div class="info bg-[#1e1e1f] container p-8 rounded-3xl items-center border mt-8 lg:w-3/4 border-[#535353] ">
+     <div class="info bg-gray-800 container p-8 rounded-3xl items-center border mt-8 lg:w-3/4 border-gray-700 ">
       <section id="about-me">
         <h1 class="text-3xl font-semibold">About me</h1>
         <hr class="w-1/12 my-4 border-4 border-[#ffb005] rounded-3xl">
@@ -118,11 +119,11 @@
           I am seeking a dynamic and challenging position in the field of computer science and technology, where I can leverage my strong educational background in B.Tech Computer Science, coupled with my hands-on experience in software development and cloud computing.
         </p>
         <br>
-        <p class="leading-6">
+        <p class="leading-6 lg:block md:block hidden">
           Eager to contribute my skills in a collaborative and innovative work environment, I aim to apply my knowledge of programming languages, databases, and cloud services to create impactful solutions. With a keen interest in continuous learning and problem-solving, I aspire to contribute effectively to a forward-thinking team and grow professionally in a dynamic industry.
         </p>
         <br>
-        <button class="lg:text-xl md:text-xl text-sm font-semibold bg-[#ffb005] px-4 py-2 rounded-xl mb-4">
+        <button class="bg-yellow-500 text-gray-900 px-6 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">
           Download Resume
         </button>
       </section>
@@ -215,37 +216,37 @@
         </div>
       </section>
 
-      <section class="my-skills">
-        <h1 class="text-3xl font-semibold">My Skills</h1>
-        <hr class="w-1/12 my-6 border-4 border-[#ffb005] rounded-3xl">
-        <div class="flex flex-wrap gap-8">
-          <div class="skill-name py-4 px-8 rounded-xl flex gap-3">
-            <ion-icon name="logo-html5" class="text-3xl text-[#ffb005]"></ion-icon>
-            <h5 class=" text-xl font-semibold">HTML</h5>
+      <section class="my-skills mb-12">
+        <h2 class="text-3xl font-semibold mb-4">My Skills</h2>
+        <div class="w-16 h-1 bg-yellow-500 mb-6 rounded-full"></div>
+        <div class="flex flex-wrap gap-4">
+          <div class="bg-gray-700 py-2 px-4 rounded-full flex items-center gap-2">
+            <ion-icon name="logo-html5" class="text-yellow-500 text-xl"></ion-icon>
+            <span>HTML</span>
           </div>
-          <div class="skill-name py-4 px-8 rounded-xl flex gap-3">
-            <ion-icon name="logo-css3" class="text-4xl text-[#ffb005]"></ion-icon>
-            <h5 class=" text-xl font-semibold">CSS</h5>
+          <div class="bg-gray-700 py-2 px-4 rounded-full flex items-center gap-2">
+            <ion-icon name="logo-css3" class="text-yellow-500 text-xl"></ion-icon>
+            <span>CSS</span>
           </div>
-          <div class="skill-name py-4 px-8 rounded-xl flex gap-3">
-            <ion-icon name="logo-nodejs" class="text-4xl text-[#ffb005]"></ion-icon>
-            <h5 class=" text-xl font-semibold">JavaScript</h5>
+          <div class="bg-gray-700 py-2 px-4 rounded-full flex items-center gap-2">
+            <ion-icon name="logo-nodejs" class="text-yellow-500 text-xl"></ion-icon>
+            <span>JavaScript</span>
           </div>
-          <div class="skill-name py-4 px-8 rounded-xl flex gap-3">
-            <ion-icon name="logo-react" class="text-4xl text-[#ffb005]"></ion-icon>
-            <h5 class=" text-xl font-semibold">React Js</h5>
+          <div class="bg-gray-700 py-2 px-4 rounded-full flex items-center gap-2">
+            <ion-icon name="logo-react" class="text-yellow-500 text-xl"></ion-icon>
+            <span>React Js</span>
           </div>
-          <div class="skill-name py-4 px-8 rounded-xl flex gap-3">
-            <ion-icon name="logo-nodejs" class="text-4xl text-[#ffb005]"></ion-icon>
-            <h5 class=" text-xl font-semibold">Node Js</h5>
+          <div class="bg-gray-700 py-2 px-4 rounded-full flex items-center gap-2">
+            <ion-icon name="logo-nodejs" class="text-yellow-500 text-xl"></ion-icon>
+            <span>Node Js</span>
           </div>
-          <div class="skill-name py-4 px-8 rounded-xl flex gap-3">
-            <ion-icon name="code-outline" class="text-4xl text-[#ffb005]"></ion-icon>
-            <h5 class=" text-xl font-semibold">C/C++</h5>
+          <div class="bg-gray-700 py-2 px-4 rounded-full flex items-center gap-2">
+            <ion-icon name="code-outline" class="text-yellow-500 text-xl"></ion-icon>
+            <span>C/C++</span>
           </div>
-          <div class="skill-name py-4 px-8 rounded-xl flex gap-3">
-            <ion-icon name="analytics-outline" class="text-4xl text-[#ffb005]"></ion-icon>
-            <h5 class=" text-xl font-semibold">Data Structures And Algorithms</h5>
+          <div class="bg-gray-700 py-2 px-4 rounded-full flex items-center gap-2">
+            <ion-icon name="analytics-outline" class="text-yellow-500 text-xl"></ion-icon>
+            <span>Data Structures And Algorithms</span>
           </div>
         </div>
       </section>
@@ -345,31 +346,24 @@
 
       </section>
 
-      <section class="contact-me">
-
-        <h1 class="text-3xl font-semibold mt-8">Contact me</h1>
-        <hr class="w-1/12 my-6 border-4 border-[#ffb005] rounded-3xl">
+      <section class="contact-me mt-8">
+        <h2 class="text-3xl font-semibold mb-4">Contact me</h2>
+        <div class="w-16 h-1 bg-yellow-500 mb-6 rounded-full"></div>
       
-        <form action="mailto:vighnupawar2004@gmail.com" method="post" enctype="text/plain">
+        <form action="mailto:vighnupawar2004@gmail.com" method="post" enctype="text/plain" class="space-y-4">
           <div class="flex gap-4 mb-4">
-            <div class="w-1/2">
-              <label for="fullName" class="sr-only">Full Name</label>
-              <input type="text" name="fullName" id="fullName" placeholder="Full Name" 
-              class="border border-red-300 outline-none bg-transparent w-full p-4 rounded-xl">
-            </div>
-            <div class="w-1/2">
-              <label for="email" class="sr-only">Email</label>
-              <input type="email" name="email" id="email" placeholder="Email" 
-              class="border border-red-300 outline-none bg-transparent w-full p-4 rounded-xl">
-            </div>
+            <input type="text" name="fullName" placeholder="Full Name" 
+            class="w-1/2 p-3 bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            <input type="email" name="email" placeholder="Email" 
+            class="w-1/2 p-3 bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
           </div>
-          <label for="message" class="sr-only">Message</label>
-          <textarea name="message" id="message" placeholder="Message" rows="7"
-          class="border border-red-300 outline-none bg-transparent w-full p-4 rounded-xl"></textarea>
-          <button type="submit" class="text-xl font-semibold bg-[#ffb005] px-4 py-2 rounded-xl mt-4 float-right">Send Message</button>
+          <textarea name="message" placeholder="Message" rows="7"
+          class="w-full p-3 bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea>
+          <button type="submit" class="bg-yellow-500 text-gray-900 px-6 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300 float-right">
+            Send Message
+          </button>
         </form>
       </section>
-      
      </div>
   </div>
 
