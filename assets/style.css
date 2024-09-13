@@ -57,13 +57,13 @@ ul {
 }
 
 .avtar-bg {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom right,
     hsl(240, 1%, 25%) 3%,
     hsl(0, 0%, 19%) 97%
-  );
-  width: 150px;
-  height: 140px;
+  ); */
+  width: 100px;
+  height: 100px;
   border-radius: 18px;
  
 }
