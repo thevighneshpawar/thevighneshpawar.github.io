@@ -3,7 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecting...</title>
+  <title>Redirect</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 20%;
+    }
+  </style>
   <script>
     // Define redirect rules
     const redirects = {
@@ -15,19 +22,26 @@
     // Get the current path from the URL
     const path = window.location.pathname;
 
-    // Redirect if the path matches a key in the redirects object
+    // Handle redirection or show 404 error
     if (redirects[path]) {
+      // Redirect if path matches
       window.location.href = redirects[path];
     } else {
-      // If no match, display a 404 error message
-      document.body.innerHTML = `
-        <h1>404 Not Found</h1>
-        <p>The page you're looking for doesn't exist.</p>
-      `;
+      // Update DOM to show 404 error message
+      document.addEventListener('DOMContentLoaded', () => {
+        document.body.innerHTML = `
+          <h1>404 - Page Not Found</h1>
+          <p>The page you're looking for does not exist.</p>
+          <a href="/">Go back to the homepage</a>
+        `;
+      });
     }
   </script>
 </head>
 <body>
-  <h1>Redirecting...</h1>
+  <noscript>
+    <h1>JavaScript is required to handle redirections</h1>
+    <p>Please enable JavaScript in your browser and reload the page.</p>
+  </noscript>
 </body>
 </html>
