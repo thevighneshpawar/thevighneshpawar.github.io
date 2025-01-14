@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script>
+    // Define redirect rules
+    const redirects = {
+      '/resume': 'https://drive.google.com/path-to-your-resume',
+      '/github': 'https://github.com/thevighneshpawar',
+      '/linkedin': 'https://www.linkedin.com/in/vighnesh-pawar/',
+    };
+
+    // Get the current path from the URL
+    const path = window.location.pathname;
+
+    // Redirect if the path matches a key in the redirects object
+    if (redirects[path]) {
+      window.location.href = redirects[path];
+    } else {
+      // If no match, display a 404 error message
+      document.body.innerHTML = `
+        <h1>404 Not Found</h1>
+        <p>The page you're looking for doesn't exist.</p>
+      `;
+    }
+  </script>
+</head>
+<body>
+  <h1>Redirecting...</h1>
+</body>
+</html>
