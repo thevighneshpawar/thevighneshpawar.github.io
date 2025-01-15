@@ -17,7 +17,6 @@
       '/resume': 'https://drive.google.com/file/d/1O3AQpEmj0UVp8f4YboSGvpa_6iHGdcNq/view?usp=sharing',
       '/github': 'https://github.com/thevighneshpawar',
       '/linkedin': 'https://www.linkedin.com/in/vighnesh-pawar/',
-      '/mail': 'mailto:apply@vighnesh.us.kg',
       '/compiler': 'https://compiler-thevighneshpawars-projects.vercel.app/',
       '/collegenotes': 'https://batunotes.netlify.app/',
       '/giphy': 'https://giphy-clone-kappa.vercel.app/',
@@ -25,21 +24,17 @@
       '/currency': 'https://moneymaths.netlify.app/',
     };
 
-    // Function to handle pay redirects with an embedded amount
-    function handleDynamicPayRedirect(path) {
-      const amount = path.match(/\/pay(\d+)/)?.[1]; // Extract the numeric value after "pay"
-      if (amount) {
-        // Construct the UPI payment URL with the extracted amount
-        const upiURL = `upi://pay?pa=ts2004@apl&tn=Payment-from-website&am=${amount}`;
-        window.location.href = upiURL; // Redirect to the UPI URL
-      } else {
-        // If no valid amount is found, show an error message
-        document.body.innerHTML = `
-          <h1>Invalid Payment Request</h1>
-          <p>Please specify a valid amount in the URL, e.g., /pay100.</p>
-          <a href="/">Go back to the homepage</a>
-        `;
-      }
+    // Function to handle mail redirection
+    function handleMailRedirect() {
+      const email = 'apply@vighnesh.us.kg';
+      const subject = 'Inquiry';
+      const body = 'Hello Vighnesh, I would like to discuss...';
+
+      // Construct the mailto link
+      const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      // Redirect to the mailto link
+      window.location.href = mailtoLink;
     }
 
     // Get the current path from the URL
@@ -49,9 +44,22 @@
     if (redirects[path]) {
       // Redirect if path matches
       window.location.href = redirects[path];
+    } else if (path === '/mail') {
+      // Handle mail redirection
+      handleMailRedirect();
     } else if (path.startsWith('/pay')) {
-      // Handle dynamic pay redirects
-      handleDynamicPayRedirect(path);
+      // Handle pay redirection
+      const amount = path.match(/\/pay(\d+)/)?.[1]; // Extract the numeric value after "pay"
+      if (amount) {
+        const upiURL = `upi://pay?pa=ts2004@apl&tn=Payment-from-website&am=${amount}`;
+        window.location.href = upiURL;
+      } else {
+        document.body.innerHTML = `
+          <h1>Invalid Payment Request</h1>
+          <p>Please specify a valid amount in the URL, e.g., /pay100.</p>
+          <a href="/">Go back to the homepage</a>
+        `;
+      }
     } else {
       // Update DOM to show 404 error message
       document.addEventListener('DOMContentLoaded', () => {
