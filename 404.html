@@ -25,19 +25,18 @@
       '/currency': 'https://moneymaths.netlify.app/',
     };
 
-    // Function to handle query parameters for /pay
-    function handlePayRedirect() {
-      const urlParams = new URLSearchParams(window.location.search);
-      const amount = urlParams.get('am'); // Get the 'am' parameter value
+    // Function to handle pay redirects with an embedded amount
+    function handleDynamicPayRedirect(path) {
+      const amount = path.match(/\/pay(\d+)/)?.[1]; // Extract the numeric value after "pay"
       if (amount) {
-        // Construct the UPI payment URL with the amount
+        // Construct the UPI payment URL with the extracted amount
         const upiURL = `upi://pay?pa=ts2004@apl&tn=Payment-from-website&am=${amount}`;
         window.location.href = upiURL; // Redirect to the UPI URL
       } else {
-        // If 'am' parameter is missing, show an error message
+        // If no valid amount is found, show an error message
         document.body.innerHTML = `
           <h1>Invalid Payment Request</h1>
-          <p>Please specify a valid amount using the 'am' parameter.</p>
+          <p>Please specify a valid amount in the URL, e.g., /pay100.</p>
           <a href="/">Go back to the homepage</a>
         `;
       }
@@ -50,9 +49,9 @@
     if (redirects[path]) {
       // Redirect if path matches
       window.location.href = redirects[path];
-    } else if (path === '/pay') {
-      // Handle /pay with query parameters
-      handlePayRedirect();
+    } else if (path.startsWith('/pay')) {
+      // Handle dynamic pay redirects
+      handleDynamicPayRedirect(path);
     } else {
       // Update DOM to show 404 error message
       document.addEventListener('DOMContentLoaded', () => {
