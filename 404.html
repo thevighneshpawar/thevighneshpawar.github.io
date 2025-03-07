@@ -25,45 +25,6 @@
       '/tcs-resume': 'https://drive.google.com/file/d/1LZGLgThqX5J3cLefepjRr2YepGeygqHW/view?usp=sharing',
     };
 
-    function getQueryParam(param) {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get(param);
-    }
-
-    async function submitAttendance() {
-      document.body.innerHTML = "<h1>Submitting Attendance...</h1>";
-
-      const contactNumber = getQueryParam("contactNumber");
-
-      if (!contactNumber) {
-        document.body.innerHTML = `<h1 style="color: red;">❌ Error</h1><p>Missing contactNumber in URL.</p>`;
-        return;
-      }
-
-      const url = "https://javabykiran.com/jbkcrm/studentattendance/submitAttendence";
-      const formData = new FormData();
-      formData.append("contactNumber", contactNumber);
-
-      try {
-        const response = await fetch(url, {
-          method: "POST",
-          body: formData,
-        });
-        const result = await response.json();
-        console.log(result);
-
-        if (result.success === true) {
-          document.body.innerHTML = `<h1 style="color: green;">✅ ${result.messages}</h1>`;
-        } else if (result.success === "duplicate") {
-          document.body.innerHTML = `<h1 style="color: orange;">⚠️ ${result.messages}</h1>`;
-        } else {
-          document.body.innerHTML = `<h1 style="color: red;">❌ Attendance Submission Failed</h1><p>${result.messages}</p>`;
-        }
-      } catch (error) {
-        console.error("Error:", error);
-        document.body.innerHTML = `<h1 style="color: red;">❌ Network Error</h1><p>Please try again later.</p>`;
-      }
-    }
 
     // Function to handle mail redirection
     function handleMailRedirect() {
@@ -90,8 +51,6 @@
             <p>Please specify a valid amount in the URL, e.g., /pay100.</p>
             <a href="/">Go back to the homepage</a>`;
         }
-      } else if (path === "/attendance") {
-        submitAttendance(); // Call attendance function when visiting "/attendance"
       } else {
         document.body.innerHTML = `<h1>404 - Page Not Found</h1>
           <p>The page you're looking for does not exist.</p>
