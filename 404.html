@@ -25,7 +25,7 @@
       '/tcs-resume': 'https://drive.google.com/file/d/1LZGLgThqX5J3cLefepjRr2YepGeygqHW/view?usp=sharing',
     };
 
-     function getQueryParam(param) {
+    function getQueryParam(param) {
       const urlParams = new URLSearchParams(window.location.search);
       return urlParams.get(param);
     }
@@ -42,10 +42,6 @@
 
       const url = "https://javabykiran.com/jbkcrm/studentattendance/submitAttendence";
       const formData = new FormData();
-      formData.append("admissionId", "19724");
-      formData.append("collegeId", "0");
-      formData.append("batchId", "768");
-      formData.append("mode", "Offline");
       formData.append("contactNumber", contactNumber);
 
       try {
@@ -68,53 +64,40 @@
         document.body.innerHTML = `<h1 style="color: red;">❌ Network Error</h1><p>Please try again later.</p>`;
       }
     }
+
     // Function to handle mail redirection
     function handleMailRedirect() {
       const email = 'apply@vighnesh.us.kg';
       const subject = 'Inquiry';
       const body = 'Hello Vighnesh, I would like to discuss...';
-
-      // Construct the mailto link
       const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-      // Redirect to the mailto link
       window.location.href = mailtoLink;
     }
 
-    // Get the current path from the URL
-    const path = window.location.pathname;
+    document.addEventListener("DOMContentLoaded", () => {
+      const path = window.location.pathname;
 
-    // Handle redirection or show 404 error
-    if (redirects[path]) {
-      // Redirect if path matches
-      window.location.href = redirects[path];
-    } else if (path === '/mail') {
-      // Handle mail redirection
-      handleMailRedirect();
-    } else if (path.startsWith('/pay')) {
-      // Handle pay redirection
-      const amount = path.match(/\/pay(\d+)/)?.[1]; // Extract the numeric value after "pay"
-      if (amount) {
-        const upiURL = `upi://pay?pa=ts2004@apl&tn=Payment-from-website&am=${amount}`;
-        window.location.href = upiURL;
+      if (redirects[path]) {
+        window.location.href = redirects[path]; // Redirect if path matches
+      } else if (path === "/mail") {
+        handleMailRedirect();
+      } else if (path.startsWith("/pay")) {
+        const amount = path.match(/\/pay(\d+)/)?.[1]; // Extract numeric value
+        if (amount) {
+          window.location.href = `upi://pay?pa=ts2004@apl&tn=Payment-from-website&am=${amount}`;
+        } else {
+          document.body.innerHTML = `<h1>Invalid Payment Request</h1>
+            <p>Please specify a valid amount in the URL, e.g., /pay100.</p>
+            <a href="/">Go back to the homepage</a>`;
+        }
+      } else if (path === "/attendance") {
+        submitAttendance(); // Call attendance function when visiting "/attendance"
       } else {
-        document.body.innerHTML = `
-          <h1>Invalid Payment Request</h1>
-          <p>Please specify a valid amount in the URL, e.g., /pay100.</p>
-          <a href="/">Go back to the homepage</a>
-        `;
-      }else if (path === '/attendance') {
-      submitAttendance(); // Automatically submit attendance
-    } else {
-      // Update DOM to show 404 error message
-      document.addEventListener('DOMContentLoaded', () => {
-        document.body.innerHTML = `
-          <h1>404 - Page Not Found</h1>
+        document.body.innerHTML = `<h1>404 - Page Not Found</h1>
           <p>The page you're looking for does not exist.</p>
-          <a href="/">Go back to the homepage</a>
-        `;
-      });
-    }
+          <a href="/">Go back to the homepage</a>`;
+      }
+    });
   </script>
 </head>
 <body>
