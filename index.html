@@ -12,9 +12,17 @@
   <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css">
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    /* Force full width in all browsers including Edge */
+    body {
+      width: 100vw;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+  </style>
 </head>
-<body class="w-full bg-gray-900">
-  <div class="flex lg:flex-row flex-col lg:gap-8 mt-12 lg:m-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<body class="bg-gray-900">
+  <div class="flex lg:flex-row flex-col lg:gap-8 mt-12 w-full max-w-full px-4 md:px-8 lg:px-12">
 
 <div class="flex relative profile bg-gray-800 lg:items-center border lg:w-1/4 w-full border-gray-700 rounded-3xl p-4 gap-8 lg:sticky lg:top-12 flex-col h-full">
   <div class="flex items-center mb-15 gap-4 lg:mt-0 mt-3 lg:flex-col ">
@@ -117,12 +125,12 @@
         <h1 class="text-3xl font-semibold">About me</h1>
         <hr class="w-1/12 my-4 border-4 border-[#ffb005] rounded-3xl">
         <p class="leading-6">
-          Hi, I’m Vighnesh, a final-year Computer Science Engineering student passionate about building web applications and solving real-world problems with technology. I have experience working with the MERN stack and love creating intuitive, efficient, and user-friendly projects.
+          Hi, I'm Vighnesh, a final-year Computer Science Engineering student passionate about building web applications and solving real-world problems with technology. I have experience working with the MERN stack and love creating intuitive, efficient, and user-friendly projects.
         </p>
         <br>
         <p class="leading-6 lg:block md:block hidden">
-          I enjoy learning new technologies and continuously improving my skills. Currently, I’m exploring backend development and enhancing my expertise in NodeJs and ReactJS.
-          Let’s connect and collaborate!
+          I enjoy learning new technologies and continuously improving my skills. Currently, I'm exploring backend development and enhancing my expertise in NodeJs and ReactJS.
+          Let's connect and collaborate!
         <br>
         <a href="/resume">
   <button class="bg-yellow-500 text-gray-900 px-6 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300 mt-2">
@@ -265,7 +273,7 @@
           <div class="swiper-wrapper flex transition-transform duration-700 ease-out">
 
             <div class="swiper-slide flex justify-center w-full flex-shrink-0">
-              <div class="flex gap-3 lg:w-[70%] flex-col lg:flex-row">
+              <div class="flex gap-3 lg:w-full flex-col lg:flex-row">
                 <img src="assets/images/likes-inc.png" class="lg:w-[40%] w-full sm:w-[70%] mx-auto border-2 border-[#d6d6d6] rounded-xl" alt="">
                 <div class="flex gap-5 flex-col">
                   <div class="text-center lg:text-left">
@@ -282,7 +290,7 @@
             </div>
 
             <div class="swiper-slide flex justify-center w-full flex-shrink-0">
-              <div class="flex gap-3 lg:w-[70%] flex-col lg:flex-row">
+              <div class="flex gap-3 lg:w-full flex-col lg:flex-row">
                 <img src="assets/images/code-editor.png" class="lg:w-[40%] w-full sm:w-[70%] mx-auto border-2 border-[#d6d6d6] rounded-xl" alt="">
                 <div class="flex gap-5 flex-col">
                   <div class="text-center lg:text-left">
@@ -303,7 +311,7 @@
 
 
             <div class="swiper-slide flex justify-center w-full flex-shrink-0">
-              <div class="flex gap-3 lg:w-[70%] flex-col lg:flex-row">
+              <div class="flex gap-3 lg:w-full flex-col lg:flex-row">
                 <img src="assets/images/personal-portfolio.png" class="lg:w-[40%] w-full sm:w-[70%] mx-auto border-2 border-[#d6d6d6] rounded-xl" alt="">
                 <div class="flex gap-5 flex-col">
                   <div class="text-center lg:text-left">
@@ -321,7 +329,7 @@
 
 
             <div class="swiper-slide flex justify-center w-full flex-shrink-0">
-              <div class="flex gap-3 lg:w-[70%] flex-col lg:flex-row">
+              <div class="flex gap-3 lg:w-full flex-col lg:flex-row">
                 <img src="assets/images/notes-web.png" class="lg:w-[40%] w-full sm:w-[70%] mx-auto border-2 border-[#d6d6d6] rounded-xl" alt="">
                 <div class="flex gap-5 flex-col">
                   <div class="text-center lg:text-left">
