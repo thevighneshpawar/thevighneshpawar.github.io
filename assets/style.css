@@ -64,7 +64,7 @@ ul {
   ); */
   width: 100px;
   height: 100px;
-  border-radius: 18px;
+  border-radius: 50px;
  
 }
 small-high{
@@ -72,7 +72,7 @@ small-high{
   padding: 5px 18px;
   border-radius: 8px; */
 }
-.
+
 
 .profile, .info {
   height: auto; /* Ensure the containers grow with content */
