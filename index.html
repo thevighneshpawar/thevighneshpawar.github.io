@@ -1,822 +1,1862 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Vighnesh Pawar — Associate Software Engineer & Full-Stack Developer specializing in React.js, Node.js, Java, and SQL."
+    />
+    <meta
+      name="keywords"
+      content="Vighnesh Pawar, Portfolio, Associate Software Engineer, Full-Stack Developer, MERN Stack, React.js, Node.js, Java, SQL, React Native"
+    />
+    <meta
+      name="author"
+      content="Vighnesh Pawar"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Vighnesh Pawar — Associate Software Engineer & Full-Stack Developer specializing in React.js, Node.js, Java, and SQL.">
-  <meta name="keywords" content="Vighnesh Pawar, Portfolio, Associate Software Engineer, Full-Stack Developer, MERN Stack, React.js, Node.js, Java, SQL, React Native">
-  <meta name="author" content="Vighnesh Pawar">
-  
-  <!-- Open Graph / Social Cards -->
-  <meta property="og:title" content="Vighnesh Pawar — Associate Software Engineer">
-  <meta property="og:description" content="Portfolio of Vighnesh Pawar — Associate Software Engineer at Appbell Technologies. Explore projects in React, Java, Node.js, and Gemini AI.">
-  <meta property="og:image" content="assets/images/cropped_image1.png">
-  <meta property="og:url" content="https://vighnesh.is-a.dev/">
-  <meta property="og:type" content="website">
+    <!-- Open Graph / Social Cards -->
+    <meta
+      property="og:title"
+      content="Vighnesh Pawar — Associate Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Vighnesh Pawar — Associate Software Engineer at Appbell Technologies. Explore projects in React, Java, Node.js, and Gemini AI."
+    />
+    <meta
+      property="og:image"
+      content="assets/images/cropped_image1.png"
+    />
+    <meta
+      property="og:url"
+      content="https://vighnesh.is-a.dev/"
+    />
+    <meta
+      property="og:type"
+      content="website"
+    />
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Vighnesh Pawar — Associate Software Engineer">
-  <meta name="twitter:description" content="Portfolio of Vighnesh Pawar — Associate Software Engineer at Appbell Technologies. Explore projects in React, Java, Node.js, and Gemini AI.">
-  <meta name="twitter:image" content="assets/images/cropped_image1.png">
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      name="twitter:title"
+      content="Vighnesh Pawar — Associate Software Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Vighnesh Pawar — Associate Software Engineer at Appbell Technologies. Explore projects in React, Java, Node.js, and Gemini AI."
+    />
+    <meta
+      name="twitter:image"
+      content="assets/images/cropped_image1.png"
+    />
 
-  <link rel="shortcut icon" href="assets/images/cropped_image1.png" type="image/x-icon">
-  <title>Vighnesh Pawar — Associate Software Engineer</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/cropped_image1.png"
+      type="image/x-icon"
+    />
+    <title>Vighnesh Pawar — Associate Software Engineer</title>
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        screens: {
-          'xs': '475px',
-          'sm': '640px',
-          'md': '768px',
-          'lg': '1024px',
-          'xl': '1280px',
-          '2xl': '1536px',
-        },
-        extend: {
-          colors: {
-            zinc: {
-              950: '#09090b',
-              900: '#121215',
-              850: '#18181c',
-              800: '#27272a',
-              750: '#333338',
-              700: '#3f3f46',
-            },
-            indigo: {
-              300: '#a5b4fc',
-              400: '#818cf8',
-              500: '#6366f1',
-              600: '#4f46e5',
-              700: '#4338ca',
-            },
-            violet: {
-              400: '#a78bfa',
-              500: '#8b5cf6',
-              600: '#7c3aed',
-            }
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          screens: {
+            xs: "475px",
+            sm: "640px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+            "2xl": "1536px",
           },
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', '-apple-system', 'sans-serif'],
-            mono: ['"JetBrains Mono"', 'monospace'],
-          }
-        }
-      }
-    }
-  </script>
+          extend: {
+            colors: {
+              zinc: {
+                950: "#09090b",
+                900: "#121215",
+                850: "#18181c",
+                800: "#27272a",
+                750: "#333338",
+                700: "#3f3f46",
+              },
+              indigo: {
+                300: "#a5b4fc",
+                400: "#818cf8",
+                500: "#6366f1",
+                600: "#4f46e5",
+                700: "#4338ca",
+              },
+              violet: {
+                400: "#a78bfa",
+                500: "#8b5cf6",
+                600: "#7c3aed",
+              },
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', "-apple-system", "sans-serif"],
+              mono: ['"JetBrains Mono"', "monospace"],
+            },
+          },
+        },
+      };
+    </script>
 
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="/assets/style.css">
-</head>
+    <!-- Custom Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="assets/style.css"
+    />
+  </head>
 
-<body class="selection:bg-indigo-500/20 selection:text-indigo-600 dark:selection:text-indigo-300">
-
-  <!-- ================= FLOATING SIDE SOCIAL / CV DOCK (LEFT) ================= -->
-  <aside class="side-dock hidden xl:flex" aria-label="Quick links">
-    <!-- GitHub -->
-    <a href="https://github.com/thevighneshpawar" target="_blank" rel="noopener noreferrer" class="side-dock-btn" aria-label="GitHub">
-      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-        <path d="M9 18c-4.51 2-5-2-7-2"></path>
-      </svg>
-      <span class="side-dock-tooltip">GitHub</span>
-    </a>
-    <!-- LinkedIn -->
-    <a href="https://linkedin.com/in/vighnesh-pawar" target="_blank" rel="noopener noreferrer" class="side-dock-btn" aria-label="LinkedIn">
-      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-        <rect width="4" height="12" x="2" y="9"></rect>
-        <circle cx="4" cy="4" r="2"></circle>
-      </svg>
-      <span class="side-dock-tooltip">LinkedIn</span>
-    </a>
-    <!-- Email -->
-    <a href="mailto:vighneshpawar004@gmail.com" class="side-dock-btn" aria-label="Email">
-      <i data-lucide="mail" class="w-4 h-4"></i>
-      <span class="side-dock-tooltip">vighneshpawar004@gmail.com</span>
-    </a>
-    <!-- CV / Resume -->
-    <div class="relative group">
-      <a href="https://vighnesh.is-a.dev/resume" target="_blank" rel="noopener noreferrer" class="side-dock-btn text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-white" aria-label="Download CV">
-        <i data-lucide="file-text" class="w-4 h-4"></i>
-        <span class="side-dock-tooltip">Download CV from here</span>
-      </a>
-      <!-- Free Style Doodle on Side Dock (Desktop 2XL) -->
-      <div class="absolute left-14 top-1/2 -translate-y-1/2 hidden 2xl:flex items-center gap-1.5 font-handwriting text-indigo-600 dark:text-indigo-400 select-none whitespace-nowrap pointer-events-none animate-float-subtle">
-        <svg class="w-6 h-6 text-indigo-500 dark:text-indigo-400 transform -scale-x-100 rotate-12 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M 5 12 Q 12 6 19 12"></path>
-          <path d="M 10 7 L 5 12 L 10 17"></path>
+  <body
+    class="selection:bg-indigo-500/20 selection:text-indigo-600 dark:selection:text-indigo-300"
+  >
+    <!-- ================= FLOATING SIDE SOCIAL / CV DOCK (LEFT) ================= -->
+    <aside
+      class="side-dock hidden xl:flex"
+      aria-label="Quick links"
+    >
+      <!-- GitHub -->
+      <a
+        href="https://github.com/thevighneshpawar"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="side-dock-btn"
+        aria-label="GitHub"
+      >
+        <svg
+          class="w-4 h-4"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+          ></path>
+          <path d="M9 18c-4.51 2-5-2-7-2"></path>
         </svg>
-        <span class="text-xl font-bold -rotate-2">download cv from here!</span>
-      </div>
-    </div>
-  </aside>
-
-  <!-- ================= FLOATING NAVIGATION PILL ================= -->
-  <header class="sticky top-4 z-50 flex justify-center w-full px-4 pointer-events-none">
-    <nav class="nav-pill pointer-events-auto flex items-center justify-between gap-2 sm:gap-4 px-3 sm:px-5 py-2 rounded-full max-w-xl w-full">
-      <!-- Brand Link -->
-      <a href="#about" class="flex items-center gap-2.5 font-semibold text-xs sm:text-sm tracking-tight shrink-0 transition-colors">
-        <img src="assets/images/cropped_image1.png" alt="VP" class="w-6 h-6 rounded-full object-cover ring-1 ring-indigo-500/50">
-        <span class="text-slate-900 dark:text-zinc-100">Vighnesh</span>
+        <span class="side-dock-tooltip">GitHub</span>
       </a>
-
-      <!-- Navigation Links -->
-      <div class="flex items-center gap-2 sm:gap-4 text-xs sm:text-sm">
-        <a href="#about" class="nav-link text-slate-500 dark:text-zinc-400 hidden xs:inline-block sm:inline-block">About</a>
-        <a href="#experience" class="nav-link text-slate-500 dark:text-zinc-400 hidden sm:inline-block">Exp</a>
-        <a href="#experience" class="nav-link text-slate-500 dark:text-zinc-400 sm:hidden">Work</a>
-        <a href="#projects" class="nav-link text-slate-500 dark:text-zinc-400">Projects</a>
-        <a href="#skills" class="nav-link text-slate-500 dark:text-zinc-400 hidden sm:inline-block">Skills</a>
-        <a href="#contact" class="nav-link text-slate-500 dark:text-zinc-400 hidden sm:inline-block">Contact</a>
-      </div>
-
-      <!-- Action Group: CV + Theme Toggle -->
-      <div class="flex items-center gap-2">
-        <a href="https://vighnesh.is-a.dev/resume" target="_blank" rel="noopener noreferrer"
-          class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-600 text-white hover:bg-indigo-500 active:scale-95 transition-all shadow-sm">
-          <i data-lucide="file-down" class="w-3.5 h-3.5"></i>
-          <span>CV</span>
+      <!-- LinkedIn -->
+      <a
+        href="https://linkedin.com/in/vighnesh-pawar"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="side-dock-btn"
+        aria-label="LinkedIn"
+      >
+        <svg
+          class="w-4 h-4"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+          ></path>
+          <rect
+            width="4"
+            height="12"
+            x="2"
+            y="9"
+          ></rect>
+          <circle
+            cx="4"
+            cy="4"
+            r="2"
+          ></circle>
+        </svg>
+        <span class="side-dock-tooltip">LinkedIn</span>
+      </a>
+      <!-- Email -->
+      <a
+        href="mailto:vighneshpawar004@gmail.com"
+        class="side-dock-btn"
+        aria-label="Email"
+      >
+        <i
+          data-lucide="mail"
+          class="w-4 h-4"
+        ></i>
+        <span class="side-dock-tooltip">vighneshpawar004@gmail.com</span>
+      </a>
+      <!-- CV / Resume -->
+      <div class="relative group">
+        <a
+          href="https://vighnesh.is-a.dev/resume"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="side-dock-btn text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-white"
+          aria-label="Download CV"
+        >
+          <i
+            data-lucide="file-text"
+            class="w-4 h-4"
+          ></i>
+          <span class="side-dock-tooltip">Download CV from here</span>
         </a>
-
-        <!-- Theme Toggle Button -->
-        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light / Dark mode">
-          <i id="themeIcon" data-lucide="moon" class="w-4 h-4"></i>
-        </button>
-      </div>
-    </nav>
-  </header>
-
-  <!-- ================= MAIN CONTAINER ================= -->
-  <main class="max-w-3xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
-
-    <!-- ===== HERO / ABOUT SECTION ===== -->
-    <section id="about" class="pt-6 sm:pt-10">
-      
-      <!-- Top Row: Avatar & Availability Badge -->
-      <div class="flex items-center justify-between gap-4 mb-6">
-        <div class="relative group">
-          <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden ring-2 ring-indigo-500/30 shadow-md bg-slate-100 dark:bg-zinc-900 transition-transform duration-300 group-hover:scale-105">
-            <img src="assets/images/cropped_image1.png" alt="Vighnesh Pawar" class="w-full h-full object-cover">
-          </div>
-          <div class="absolute -bottom-1.5 -right-1.5 bg-white dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 rounded-full p-1 shadow-sm">
-            <span class="block w-3 h-3 rounded-full bg-emerald-500 pulse-badge"></span>
-          </div>
-        </div>
-
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-          <span>Open to Opportunities</span>
-        </div>
-      </div>
-
-      <!-- Hero Heading -->
-      <div class="space-y-3 mb-6">
-        <h1 class="text-3xl sm:text-4xl sm:leading-tight font-extrabold tracking-tight text-slate-900 dark:text-white">
-          Hi, I'm Vighnesh Pawar.
-        </h1>
-        <p class="text-lg sm:text-xl text-slate-700 dark:text-zinc-300 font-medium leading-relaxed">
-          <span class="text-indigo-600 dark:text-indigo-400 font-semibold">Associate Software Engineer</span> at Appbell Technologies & Full-Stack Developer.
-        </p>
-      </div>
-
-      <!-- Narrative Bio -->
-      <div class="space-y-4 text-slate-600 dark:text-zinc-400 text-sm sm:text-base leading-relaxed mb-8">
-        <p>
-          I'm a software engineer based in Vita, Maharashtra. Currently working at <strong class="text-slate-900 dark:text-zinc-200 font-semibold">Appbell Technologies Pvt. Ltd.</strong>, where I develop responsive web user interfaces in <strong class="text-indigo-600 dark:text-indigo-400 font-semibold">React.js</strong>, engineer backend services with <strong class="text-indigo-600 dark:text-indigo-400 font-semibold">Java</strong>, manage relational databases with <strong class="text-indigo-600 dark:text-indigo-400 font-semibold">SQL</strong>, and build mobile components with <strong class="text-indigo-600 dark:text-indigo-400 font-semibold">React Native</strong>.
-        </p>
-        <p>
-          Passionate about building AI-powered web applications (using the Gemini API), microservices, payment workflow automations, and scalable cloud architectures.
-        </p>
-      </div>
-
-      <!-- Free Style Handwritten Arrow & Text pointing to CV Button -->
-      <div class="space-y-3 mb-6">
-
-        <!-- Action Row: CV, Email & Socials -->
-        <div class="flex flex-wrap items-center gap-3">
-          <a href="https://vighnesh.is-a.dev/resume" target="_blank" rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 text-white font-semibold text-sm hover:bg-indigo-500 active:scale-95 transition-all shadow-md shadow-indigo-600/25 ring-2 ring-indigo-500/20">
-            <i data-lucide="file-down" class="w-4 h-4"></i>
-            <span>Download CV</span>
-          </a>
-          <a href="mailto:vighneshpawar004@gmail.com"
-            class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-zinc-200 font-medium text-sm hover:bg-slate-50 dark:hover:bg-zinc-800 transition-all shadow-sm min-w-0 max-w-full overflow-hidden">
-            <i data-lucide="mail" class="w-4 h-4 text-indigo-600 dark:text-indigo-400 shrink-0"></i>
-            <span class="hidden sm:inline truncate">vighneshpawar004@gmail.com</span>
-            <span class="sm:hidden">Email Me</span>
-          </a>
-          <!-- Social icons always in a row, wrap naturally -->
-          <div class="flex items-center gap-2 flex-wrap">
-            <!-- GitHub with inline SVG -->
-            <a href="https://github.com/thevighneshpawar" target="_blank" rel="noopener noreferrer"
-              class="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 flex items-center justify-center text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white hover:border-indigo-500/50 transition-all shadow-sm"
-              title="GitHub">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                <path d="M9 18c-4.51 2-5-2-7-2"></path>
-              </svg>
-            </a>
-            <!-- LinkedIn with inline SVG -->
-            <a href="https://linkedin.com/in/vighnesh-pawar" target="_blank" rel="noopener noreferrer"
-              class="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 flex items-center justify-center text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white hover:border-indigo-500/50 transition-all shadow-sm"
-              title="LinkedIn">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect width="4" height="12" x="2" y="9"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg>
-            </a>
-            <a href="tel:+919518562155"
-              class="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 flex items-center justify-center text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white hover:border-indigo-500/50 transition-all shadow-sm"
-              title="+91 9518562155">
-              <i data-lucide="phone" class="w-4 h-4"></i>
-            </a>
-          </div>
-        </div>
-
-      </div><!-- end space-y-3 mb-6 -->
-
-      <!-- Quick Metrics Strip -->
-      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-6 mt-8 border-t border-slate-200 dark:border-zinc-850">
-        <div class="p-3.5 rounded-2xl bg-white dark:bg-zinc-900/40 border border-slate-200 dark:border-zinc-800/80 shadow-sm">
-          <p class="text-lg sm:text-2xl font-bold text-slate-900 dark:text-white font-mono truncate">Appbell</p>
-          <p class="text-xs text-slate-500 dark:text-zinc-400 mt-0.5">Software Engineer</p>
-        </div>
-        <div class="p-3.5 rounded-2xl bg-white dark:bg-zinc-900/40 border border-slate-200 dark:border-zinc-800/80 shadow-sm">
-          <p class="text-lg sm:text-2xl font-bold text-indigo-600 dark:text-indigo-400 font-mono">8.44</p>
-          <p class="text-xs text-slate-500 dark:text-zinc-400 mt-0.5">B.Tech CGPA</p>
-        </div>
-        <div class="p-3.5 rounded-2xl bg-white dark:bg-zinc-900/40 border border-slate-200 dark:border-zinc-800/80 shadow-sm col-span-2 sm:col-span-1">
-          <p class="text-lg sm:text-2xl font-bold text-slate-900 dark:text-white font-mono">React+Java</p>
-          <p class="text-xs text-slate-500 dark:text-zinc-400 mt-0.5">Core Stack</p>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- ===== WORK EXPERIENCE SECTION ===== -->
-    <section id="experience" class="space-y-6">
-      
-      <!-- Section Header -->
-      <div class="flex items-end justify-between border-b border-slate-200 dark:border-zinc-850 pb-4">
-        <div>
-          <span class="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 block mb-1">Career Journey</span>
-          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Work Experience</h2>
-        </div>
-      </div>
-
-      <div class="timeline-stem">
-        
-        <!-- Experience 1: Appbell Technologies -->
-        <div class="timeline-node">
-          <div class="timeline-bullet"></div>
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1.5">
-            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Associate Software Engineer</h3>
-            <span class="text-xs font-mono text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/40 px-2.5 py-0.5 rounded-full border border-indigo-200 dark:border-indigo-800/60 w-fit">
-              Sept 2025 — Jun 2026
-            </span>
-          </div>
-          <p class="text-sm font-medium text-slate-500 dark:text-zinc-400 mb-3">Appbell Technologies Pvt. Ltd.</p>
-          <ul class="space-y-2 text-xs sm:text-sm text-slate-600 dark:text-zinc-300">
-            <li class="flex items-start gap-2">
-              <span class="text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5">•</span>
-              <span>Developing and maintaining high-performance user interface components using <strong class="text-slate-900 dark:text-white">React.js</strong> for production web applications.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5">•</span>
-              <span>Engineering robust backend application modules using <strong class="text-slate-900 dark:text-white">Java</strong> with the company's in-house architecture framework.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5">•</span>
-              <span>Managing and optimizing relational database schemas and data operations using <strong class="text-slate-900 dark:text-white">SQL</strong>.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5">•</span>
-              <span>Contributing to mobile app development using <strong class="text-slate-900 dark:text-white">React Native</strong> for seamless cross-platform experiences.</span>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Experience 2: Tech spot Infotech -->
-        <div class="timeline-node">
-          <div class="timeline-bullet"></div>
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1.5">
-            <h3 class="text-base font-bold text-slate-900 dark:text-white">Web Development Intern</h3>
-            <span class="text-xs font-mono text-slate-600 dark:text-zinc-400 bg-slate-100 dark:bg-zinc-900 px-2.5 py-0.5 rounded-full border border-slate-200 dark:border-zinc-800 w-fit">
-              Feb 2024 — May 2024
-            </span>
-          </div>
-          <p class="text-sm font-medium text-slate-500 dark:text-zinc-400 mb-3">Tech spot Infotech Pvt. Ltd. · Sangli, Maharashtra</p>
-          <ul class="space-y-2 text-xs sm:text-sm text-slate-600 dark:text-zinc-300">
-            <li class="flex items-start gap-2">
-              <span class="text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5">•</span>
-              <span>Collaborated with engineering teams to construct responsive client web interfaces and improve UI layouts.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5">•</span>
-              <span>Maintained backend database workflows and addressed cross-browser compatibility issues.</span>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ===== FEATURED PROJECTS SECTION ===== -->
-    <section id="projects" class="space-y-6">
-      
-      <!-- Section Header -->
-      <div class="flex items-end justify-between border-b border-slate-200 dark:border-zinc-850 pb-4">
-        <div>
-          <span class="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 block mb-1">Portfolio</span>
-          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Featured Projects</h2>
-        </div>
-        <span class="text-xs text-slate-500 dark:text-zinc-500 font-mono hidden sm:inline-block">From Resume & Production</span>
-      </div>
-
-      <!-- 2-Column Responsive Card Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-
-        <!-- Project 1: Edu Test Portal (MERN + Gemini AI) -->
-        <article class="project-card rounded-2xl overflow-hidden flex flex-col justify-between group">
-          <div>
-            <div class="relative h-44 overflow-hidden bg-slate-100 dark:bg-zinc-900 border-b border-slate-200 dark:border-zinc-800/80">
-              <img src="assets/images/quiz.png" alt="Edu Test Portal" class="project-img w-full h-full object-cover">
-              <span class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-md text-[10px] font-mono font-semibold bg-white/90 dark:bg-zinc-950/80 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-500/30 backdrop-blur-md shadow-sm">
-                Gemini AI · MERN
-              </span>
-            </div>
-            <div class="p-5">
-              <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors mb-1.5 flex items-center justify-between">
-                <span>Edu Test Portal</span>
-                <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-400 dark:text-zinc-500 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
-              </h3>
-              <p class="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4">
-                Full-featured online quiz platform with authentication, quiz creation, leaderboard, and history. Integrated AI-powered quiz generation via <strong class="text-slate-800 dark:text-zinc-200 font-semibold">Gemini API</strong> and media storage with Cloudinary.
-              </p>
-            </div>
-          </div>
-          <div class="px-5 pb-5 pt-0">
-            <div class="flex flex-wrap gap-1.5 mb-4">
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">React.js</span>
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">Node.js</span>
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">MongoDB</span>
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-indigo-50 dark:bg-zinc-900 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800/50">Gemini API</span>
-            </div>
-            <div class="flex items-center gap-2 pt-3 border-t border-slate-200 dark:border-zinc-850">
-              <a href="https://mern-quiz-frontend.vercel.app/" target="_blank" rel="noopener noreferrer"
-                class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-indigo-600 text-white hover:bg-indigo-500 transition-colors shadow-sm">
-                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                <span>Live Demo</span>
-              </a>
-              <a href="https://github.com/thevighneshpawar/mern-quiz" target="_blank" rel="noopener noreferrer"
-                class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg text-slate-700 dark:text-zinc-300 bg-slate-100 dark:bg-zinc-900 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-zinc-800 transition-colors">
-                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                </svg>
-                <span>GitHub Link</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 2: E-commerce Website (MERN + Razorpay) -->
-        <article class="project-card rounded-2xl overflow-hidden flex flex-col justify-between group">
-          <div>
-            <div class="relative h-44 overflow-hidden bg-slate-100 dark:bg-zinc-900 border-b border-slate-200 dark:border-zinc-800/80">
-              <img src="assets/images/ecom.png" alt="E-Commerce Website" class="project-img w-full h-full object-cover">
-              <span class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-md text-[10px] font-mono font-semibold bg-white/90 dark:bg-zinc-950/80 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/30 backdrop-blur-md shadow-sm">
-                Razorpay · MERN
-              </span>
-            </div>
-            <div class="p-5">
-              <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors mb-1.5 flex items-center justify-between">
-                <span>E-Commerce Website</span>
-                <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-400 dark:text-zinc-500 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
-              </h3>
-              <p class="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4">
-                Full-featured online store with product filtering, cart, checkout with <strong class="text-slate-800 dark:text-zinc-200 font-semibold">Razorpay integration</strong>, and order tracking. Includes an admin panel for managing products and orders.
-              </p>
-            </div>
-          </div>
-          <div class="px-5 pb-5 pt-0">
-            <div class="flex flex-wrap gap-1.5 mb-4">
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">React.js</span>
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">Node.js</span>
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">MongoDB</span>
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">Razorpay</span>
-            </div>
-            <div class="flex items-center gap-2 pt-3 border-t border-slate-200 dark:border-zinc-850">
-              <a href="https://ecommerce-frontend-jet-one.vercel.app/" target="_blank" rel="noopener noreferrer"
-                class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-indigo-600 text-white hover:bg-indigo-500 transition-colors shadow-sm">
-                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                <span>Live Demo</span>
-              </a>
-              <a href="https://github.com/thevighneshpawar/ecommerce-mern" target="_blank" rel="noopener noreferrer"
-                class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg text-slate-700 dark:text-zinc-300 bg-slate-100 dark:bg-zinc-900 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-zinc-800 transition-colors">
-                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                </svg>
-                <span>GitHub Link</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 3: Automated Payment & SMM Service -->
-        <article class="project-card rounded-2xl overflow-hidden flex flex-col justify-between group">
-          <div>
-            <div class="relative h-44 overflow-hidden bg-slate-100 dark:bg-zinc-900 border-b border-slate-200 dark:border-zinc-800/80">
-              <img src="assets/images/auto.png" alt="Automated Payment" class="project-img w-full h-full object-cover">
-              <span class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-md text-[10px] font-mono font-semibold bg-white/90 dark:bg-zinc-950/80 text-sky-600 dark:text-cyan-400 border border-sky-200 dark:border-cyan-500/30 backdrop-blur-md shadow-sm">
-                Paytm API · Firebase
-              </span>
-            </div>
-            <div class="p-5">
-              <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors mb-1.5 flex items-center justify-between">
-                <span>Automated Payment & SMM Service</span>
-                <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-400 dark:text-zinc-500 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
-              </h3>
-              <p class="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4">
-                Full-stack app to automate SMM service orders. Implemented payment status tracking using <strong class="text-slate-800 dark:text-zinc-200 font-semibold">Paytm transaction APIs</strong> along with SMM panel API integration.
-              </p>
-            </div>
-          </div>
-          <div class="px-5 pb-5 pt-0">
-            <div class="flex flex-wrap gap-1.5 mb-4">
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">React.js</span>
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">Firebase</span>
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">Node.js</span>
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">Paytm API</span>
-            </div>
-            <div class="flex items-center gap-2 pt-3 border-t border-slate-200 dark:border-zinc-850">
-              <a href="https://autolikes.vercel.app/" target="_blank" rel="noopener noreferrer"
-                class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-indigo-600 text-white hover:bg-indigo-500 transition-colors shadow-sm">
-                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                <span>Live Demo</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 4: Code Compiler -->
-        <article class="project-card rounded-2xl overflow-hidden flex flex-col justify-between group">
-          <div>
-            <div class="relative h-44 overflow-hidden bg-slate-100 dark:bg-zinc-900 border-b border-slate-200 dark:border-zinc-800/80">
-              <img src="assets/images/code.png" alt="Online Code Compiler" class="project-img w-full h-full object-cover">
-              <span class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-md text-[10px] font-mono font-semibold bg-white/90 dark:bg-zinc-950/80 text-violet-600 dark:text-violet-400 border border-violet-200 dark:border-violet-500/30 backdrop-blur-md shadow-sm">
-                Dev Tool
-              </span>
-            </div>
-            <div class="p-5">
-              <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors mb-1.5 flex items-center justify-between">
-                <span>Online Code Compiler</span>
-                <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-400 dark:text-zinc-500 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
-              </h3>
-              <p class="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4">
-                Web code runner executing C, C++, Java, and Python via the Judge0 API. Features syntax highlighting and GitHub Gist syncing.
-              </p>
-            </div>
-          </div>
-          <div class="px-5 pb-5 pt-0">
-            <div class="flex flex-wrap gap-1.5 mb-4">
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">Judge0 API</span>
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">CodeMirror</span>
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">Node.js</span>
-            </div>
-            <div class="flex items-center gap-2 pt-3 border-t border-slate-200 dark:border-zinc-850">
-              <a href="https://code-editor-mwsb.onrender.com/" target="_blank" rel="noopener noreferrer"
-                class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-indigo-600 text-white hover:bg-indigo-500 transition-colors shadow-sm">
-                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                <span>Live Demo</span>
-              </a>
-              <a href="https://github.com/thevighneshpawar/code-editor" target="_blank" rel="noopener noreferrer"
-                class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg text-slate-700 dark:text-zinc-300 bg-slate-100 dark:bg-zinc-900 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-zinc-800 transition-colors">
-                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                </svg>
-                <span>Code</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 5: College Notes -->
-        <article class="project-card rounded-2xl overflow-hidden flex flex-col justify-between group">
-          <div>
-            <div class="relative h-44 overflow-hidden bg-slate-100 dark:bg-zinc-900 border-b border-slate-200 dark:border-zinc-800/80">
-              <img src="assets/images/notes-web.png" alt="College Notes Web" class="project-img w-full h-full object-cover">
-              <span class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-md text-[10px] font-mono font-semibold bg-white/90 dark:bg-zinc-950/80 text-amber-600 dark:text-amber-400 border border-amber-200 dark:border-amber-500/30 backdrop-blur-md shadow-sm">
-                Resource Hub
-              </span>
-            </div>
-            <div class="p-5">
-              <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors mb-1.5 flex items-center justify-between">
-                <span>College Notes & Resources</span>
-                <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-400 dark:text-zinc-500 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
-              </h3>
-              <p class="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4">
-                Academic portal built for university engineering students to browse, organize, and download curated semester lecture notes and study resources.
-              </p>
-            </div>
-          </div>
-          <div class="px-5 pb-5 pt-0">
-            <div class="flex flex-wrap gap-1.5 mb-4">
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">HTML5</span>
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">CSS3</span>
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">JavaScript</span>
-            </div>
-            <div class="flex items-center gap-2 pt-3 border-t border-slate-200 dark:border-zinc-850">
-              <a href="https://batunotes.netlify.app/" target="_blank" rel="noopener noreferrer"
-                class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-indigo-600 text-white hover:bg-indigo-500 transition-colors shadow-sm">
-                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                <span>Live Demo</span>
-              </a>
-              <a href="https://github.com/thevighneshpawar/collegenotes" target="_blank" rel="noopener noreferrer"
-                class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg text-slate-700 dark:text-zinc-300 bg-slate-100 dark:bg-zinc-900 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-zinc-800 transition-colors">
-                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                </svg>
-                <span>Code</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 6: Personal Portfolio -->
-        <article class="project-card rounded-2xl overflow-hidden flex flex-col justify-between group">
-          <div>
-            <div class="relative h-44 overflow-hidden bg-slate-100 dark:bg-zinc-900 border-b border-slate-200 dark:border-zinc-800/80">
-              <img src="assets/images/personal-portfolio.png" alt="Personal Portfolio" class="project-img w-full h-full object-cover">
-              <span class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-md text-[10px] font-mono font-semibold bg-white/90 dark:bg-zinc-950/80 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-700/50 backdrop-blur-md shadow-sm">
-                Minimal Web
-              </span>
-            </div>
-            <div class="p-5">
-              <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors mb-1.5 flex items-center justify-between">
-                <span>Minimalist Developer Portfolio</span>
-                <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-400 dark:text-zinc-500 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
-              </h3>
-              <p class="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4">
-                Clean developer portfolio showcasing engineering projects, academic background, and technical expertise with dark aesthetics and smooth interactions.
-              </p>
-            </div>
-          </div>
-          <div class="px-5 pb-5 pt-0">
-            <div class="flex flex-wrap gap-1.5 mb-4">
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">Tailwind CSS</span>
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">JavaScript</span>
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800">GitHub Pages</span>
-            </div>
-            <div class="flex items-center gap-2 pt-3 border-t border-slate-200 dark:border-zinc-850">
-              <a href="https://vighnesh.is-a.dev/" target="_blank" rel="noopener noreferrer"
-                class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-indigo-600 text-white hover:bg-indigo-500 transition-colors shadow-sm">
-                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                <span>Live Demo</span>
-              </a>
-              <a href="https://github.com/thevighneshpawar/personalportfolio" target="_blank" rel="noopener noreferrer"
-                class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg text-slate-700 dark:text-zinc-300 bg-slate-100 dark:bg-zinc-900 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-zinc-800 transition-colors">
-                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                </svg>
-                <span>Code</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ===== SKILLS & TOOLBOX SECTION ===== -->
-    <section id="skills" class="space-y-6">
-      <div class="flex items-end justify-between border-b border-slate-200 dark:border-zinc-850 pb-4">
-        <div>
-          <span class="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 block mb-1">Toolbox</span>
-          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Skills & Technologies</h2>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        
-        <!-- Programming & Core -->
-        <div class="p-5 rounded-2xl bg-white dark:bg-zinc-900/50 border border-slate-200 dark:border-zinc-800 shadow-sm">
-          <div class="flex items-center gap-2 mb-3.5 text-indigo-600 dark:text-indigo-400">
-            <i data-lucide="code-2" class="w-4 h-4"></i>
-            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">Programming & Core</h3>
-          </div>
-          <div class="flex flex-wrap gap-1.5">
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">Java</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">C</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">C++</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">JavaScript</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">Data Structures</span>
-          </div>
-        </div>
-
-        <!-- Web & Mobile Frameworks -->
-        <div class="p-5 rounded-2xl bg-white dark:bg-zinc-900/50 border border-slate-200 dark:border-zinc-800 shadow-sm">
-          <div class="flex items-center gap-2 mb-3.5 text-indigo-600 dark:text-indigo-400">
-            <i data-lucide="layout" class="w-4 h-4"></i>
-            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">Web & Mobile Frameworks</h3>
-          </div>
-          <div class="flex flex-wrap gap-1.5">
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">React.js</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">React Native</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">Node.js</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">Express.js</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">Tailwind CSS</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">HTML & CSS</span>
-          </div>
-        </div>
-
-        <!-- Databases -->
-        <div class="p-5 rounded-2xl bg-white dark:bg-zinc-900/50 border border-slate-200 dark:border-zinc-800 shadow-sm">
-          <div class="flex items-center gap-2 mb-3.5 text-indigo-600 dark:text-indigo-400">
-            <i data-lucide="database" class="w-4 h-4"></i>
-            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">Databases</h3>
-          </div>
-          <div class="flex flex-wrap gap-1.5">
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">SQL</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">MongoDB</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">Firebase</span>
-          </div>
-        </div>
-
-        <!-- Tools & Platforms -->
-        <div class="p-5 rounded-2xl bg-white dark:bg-zinc-900/50 border border-slate-200 dark:border-zinc-800 shadow-sm">
-          <div class="flex items-center gap-2 mb-3.5 text-indigo-600 dark:text-indigo-400">
-            <i data-lucide="wrench" class="w-4 h-4"></i>
-            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">Tools & Cloud</h3>
-          </div>
-          <div class="flex flex-wrap gap-1.5">
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">Git & GitHub</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">Vercel</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">Insomnia</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">Kong OSS</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">Postman</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ===== CERTIFICATIONS & SPECIALIZATIONS ===== -->
-    <section id="certifications" class="space-y-6">
-      <div class="flex items-end justify-between border-b border-slate-200 dark:border-zinc-850 pb-4">
-        <div>
-          <span class="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 block mb-1">Knowledge & Growth</span>
-          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Certifications & Courses</h2>
-        </div>
-      </div>
-
-      <div class="glass-card rounded-2xl p-6 relative overflow-hidden">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
-          <h3 class="text-lg font-bold text-slate-900 dark:text-white">Full Stack Engineering with MERN Stack</h3>
-          <span class="text-xs font-mono text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/40 px-2.5 py-0.5 rounded-full border border-indigo-200 dark:border-indigo-800/60 w-fit">
-            Specialization
+        <!-- Free Style Doodle on Side Dock (Desktop 2XL) -->
+        <div
+          class="absolute left-14 top-1/2 -translate-y-1/2 hidden 2xl:flex items-center gap-1.5 font-handwriting text-indigo-600 dark:text-indigo-400 select-none whitespace-nowrap pointer-events-none animate-float-subtle"
+        >
+          <svg
+            class="w-6 h-6 text-indigo-500 dark:text-indigo-400 transform -scale-x-100 rotate-12 shrink-0"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M 5 12 Q 12 6 19 12"></path>
+            <path d="M 10 7 L 5 12 L 10 17"></path>
+          </svg>
+          <span class="text-xl font-bold -rotate-2">
+            download cv from here!
           </span>
         </div>
-        <p class="text-xs sm:text-sm text-slate-600 dark:text-zinc-300 leading-relaxed">
-          Covered MERN stack development, TypeScript, Next.js, Test-Driven Development (TDD), Docker, Apache Kafka, PostgreSQL, and ORM workflows. Built scalable, real-world applications integrating frontend, backend, and DevOps tooling.
-        </p>
       </div>
-    </section>
+    </aside>
 
-    <!-- ===== EDUCATION SECTION ===== -->
-    <section id="education" class="space-y-6">
-      <div class="flex items-end justify-between border-b border-slate-200 dark:border-zinc-850 pb-4">
-        <div>
-          <span class="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 block mb-1">Academic Background</span>
-          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Education</h2>
+    <!-- ================= FLOATING NAVIGATION PILL ================= -->
+    <header
+      class="fixed top-4 left-0 z-50 flex justify-center w-full px-4 pointer-events-none"
+    >
+      <nav
+        class="nav-pill pointer-events-auto flex items-center justify-between gap-2 sm:gap-4 px-3 sm:px-5 py-2 rounded-full max-w-xl w-full"
+      >
+        <!-- Brand Link -->
+        <a
+          href="#about"
+          class="flex items-center gap-2.5 font-semibold text-xs sm:text-sm tracking-tight shrink-0 transition-colors"
+        >
+          <img
+            src="assets/images/cropped_image1.png"
+            alt="VP"
+            class="w-6 h-6 rounded-full object-cover ring-1 ring-indigo-500/50"
+          />
+          <span class="text-slate-900 dark:text-zinc-100">Vighnesh</span>
+        </a>
+
+        <!-- Navigation Links -->
+        <div class="flex items-center gap-2 sm:gap-4 text-xs sm:text-sm">
+          <a
+            href="#about"
+            class="nav-link text-slate-500 dark:text-zinc-400 hidden xs:inline-block sm:inline-block"
+          >
+            About
+          </a>
+          <a
+            href="#experience"
+            class="nav-link text-slate-500 dark:text-zinc-400 hidden sm:inline-block"
+          >
+            Exp
+          </a>
+          <a
+            href="#experience"
+            class="nav-link text-slate-500 dark:text-zinc-400 sm:hidden"
+          >
+            Work
+          </a>
+          <a
+            href="#projects"
+            class="nav-link text-slate-500 dark:text-zinc-400"
+          >
+            Projects
+          </a>
+          <a
+            href="#skills"
+            class="nav-link text-slate-500 dark:text-zinc-400 hidden sm:inline-block"
+          >
+            Skills
+          </a>
+          <a
+            href="#contact"
+            class="nav-link text-slate-500 dark:text-zinc-400 hidden sm:inline-block"
+          >
+            Contact
+          </a>
         </div>
-      </div>
 
-      <div class="timeline-stem">
-        <!-- B.Tech -->
-        <div class="timeline-node">
-          <div class="timeline-bullet"></div>
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
-            <h3 class="text-base font-bold text-slate-900 dark:text-white">B.Tech in Computer Science and Engineering</h3>
-            <span class="text-xs font-mono text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-zinc-900 px-2.5 py-0.5 rounded-full border border-indigo-200 dark:border-zinc-800 w-fit">
-              2021 — 2025
-            </span>
-          </div>
-          <p class="text-sm text-slate-500 dark:text-zinc-400">Adarsh Institute of Technology and Research Centre, Vita</p>
-          <p class="text-xs text-slate-600 dark:text-zinc-500 font-mono mt-1">Cumulative CGPA: <strong class="text-slate-800 dark:text-zinc-200">8.44 / 10</strong></p>
+        <!-- Action Group: CV + Theme Toggle -->
+        <div class="flex items-center gap-2">
+          <a
+            href="https://vighnesh.is-a.dev/resume"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-600 text-white hover:bg-indigo-500 active:scale-95 transition-all shadow-sm"
+          >
+            <i
+              data-lucide="file-down"
+              class="w-3.5 h-3.5"
+            ></i>
+            <span>CV</span>
+          </a>
+
+          <!-- Theme Toggle Button -->
+          <button
+            id="themeToggle"
+            class="theme-toggle-btn"
+            aria-label="Toggle Theme"
+            title="Toggle Light / Dark mode"
+          >
+            <i
+              id="themeIcon"
+              data-lucide="moon"
+              class="w-4 h-4"
+            ></i>
+          </button>
         </div>
+      </nav>
+    </header>
 
-        <!-- HSC -->
-        <div class="timeline-node">
-          <div class="timeline-bullet"></div>
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
-            <h3 class="text-base font-bold text-slate-900 dark:text-white">Class 12 (HSC Board)</h3>
-            <span class="text-xs font-mono text-slate-600 dark:text-zinc-400 bg-slate-100 dark:bg-zinc-900 px-2.5 py-0.5 rounded-full border border-slate-200 dark:border-zinc-800 w-fit">
-              2020 — 2021
-            </span>
-          </div>
-          <p class="text-sm text-slate-500 dark:text-zinc-400">Dr. Patangrao Kadam Junior College, Kundal</p>
-          <p class="text-xs text-slate-600 dark:text-zinc-500 font-mono mt-1">Score: <strong class="text-slate-800 dark:text-zinc-200">83.6%</strong></p>
-        </div>
-
-        <!-- SSC -->
-        <div class="timeline-node">
-          <div class="timeline-bullet"></div>
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
-            <h3 class="text-base font-bold text-slate-900 dark:text-white">Class 10 (SSC Board)</h3>
-            <span class="text-xs font-mono text-slate-600 dark:text-zinc-400 bg-slate-100 dark:bg-zinc-900 px-2.5 py-0.5 rounded-full border border-slate-200 dark:border-zinc-800 w-fit">
-              2018 — 2019
-            </span>
-          </div>
-          <p class="text-sm text-slate-500 dark:text-zinc-400">Modern Education Society, Vita</p>
-          <p class="text-xs text-slate-600 dark:text-zinc-500 font-mono mt-1">Score: <strong class="text-slate-800 dark:text-zinc-200">87.4%</strong></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== CONTACT SECTION ===== -->
-    <section id="contact" class="space-y-6">
-      <div class="flex items-end justify-between border-b border-slate-200 dark:border-zinc-850 pb-4">
-        <div>
-          <span class="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 block mb-1">Get In Touch</span>
-          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Let's Connect</h2>
-        </div>
-      </div>
-
-      <div class="glass-card rounded-3xl p-6 sm:p-8">
-        <p class="text-slate-600 dark:text-zinc-400 text-sm sm:text-base leading-relaxed mb-6">
-          I'm always open to discussing new software engineering roles, full-stack opportunities, or tech collaborations. Reach out below or drop an email directly.
-        </p>
-
-        <!-- Inline Status Feedback -->
-        <div id="formStatus" class="hidden mb-5"></div>
-
-        <!-- Contact Form -->
-        <form id="contactForm" class="space-y-4">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-zinc-400 mb-1.5">Your Name</label>
-              <input type="text" name="fullName" placeholder="e.g. Alex Smith" required
-                class="w-full px-4 py-3 rounded-xl bg-white dark:bg-zinc-950 border border-slate-300 dark:border-zinc-800 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-zinc-600 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all">
+    <!-- ================= MAIN CONTAINER ================= -->
+    <main
+      class="max-w-3xl mx-auto px-4 sm:px-6 pt-20 sm:pt-14 pb-20 space-y-20"
+    >
+      <!-- ===== HERO / ABOUT SECTION ===== -->
+      <section
+        id="about"
+        class="pt-6 sm:pt-10"
+      >
+        <!-- Top Row: Avatar & Availability Badge -->
+        <div class="flex items-center justify-between gap-4 mb-6">
+          <div class="relative group">
+            <div
+              class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden ring-2 ring-indigo-500/30 shadow-md bg-slate-100 dark:bg-zinc-900 transition-transform duration-300 group-hover:scale-105"
+            >
+              <img
+                src="assets/images/cropped_image1.png"
+                alt="Vighnesh Pawar"
+                class="w-full h-full object-cover"
+              />
             </div>
-            <div>
-              <label class="block text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-zinc-400 mb-1.5">Email Address</label>
-              <input type="email" name="email" placeholder="alex@example.com" required
-                class="w-full px-4 py-3 rounded-xl bg-white dark:bg-zinc-950 border border-slate-300 dark:border-zinc-800 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-zinc-600 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all">
+            <div
+              class="absolute -bottom-1.5 -right-1.5 bg-white dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 rounded-full p-1 shadow-sm"
+            >
+              <span
+                class="block w-3 h-3 rounded-full bg-emerald-500 pulse-badge"
+              ></span>
             </div>
           </div>
 
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20"
+          >
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span>Open to Opportunities</span>
+          </div>
+        </div>
+
+        <!-- Hero Heading -->
+        <div class="space-y-3 mb-6">
+          <h1
+            class="text-3xl sm:text-4xl sm:leading-tight font-extrabold tracking-tight text-slate-900 dark:text-white"
+          >
+            Hi, I'm Vighnesh Pawar.
+          </h1>
+          <p
+            class="text-lg sm:text-xl text-slate-700 dark:text-zinc-300 font-medium leading-relaxed"
+          >
+            <span class="text-indigo-600 dark:text-indigo-400 font-semibold">
+              Associate Software Engineer
+            </span>
+            at Appbell Technologies & Full-Stack Developer.
+          </p>
+        </div>
+
+        <!-- Narrative Bio -->
+        <div
+          class="space-y-4 text-slate-600 dark:text-zinc-400 text-sm sm:text-base leading-relaxed mb-8"
+        >
+          <p>
+            I'm a software engineer based in Vita, Maharashtra. Currently
+            working at
+            <strong class="text-slate-900 dark:text-zinc-200 font-semibold">
+              Appbell Technologies Pvt. Ltd.
+            </strong>
+            , where I develop responsive web user interfaces in
+            <strong class="text-indigo-600 dark:text-indigo-400 font-semibold">
+              React.js
+            </strong>
+            , engineer backend services with
+            <strong class="text-indigo-600 dark:text-indigo-400 font-semibold">
+              Java
+            </strong>
+            , manage relational databases with
+            <strong class="text-indigo-600 dark:text-indigo-400 font-semibold">
+              SQL
+            </strong>
+            , and build mobile components with
+            <strong class="text-indigo-600 dark:text-indigo-400 font-semibold">
+              React Native
+            </strong>
+            .
+          </p>
+          <p>
+            Passionate about building AI-powered web applications (using the
+            Gemini API), microservices, payment workflow automations, and
+            scalable cloud architectures.
+          </p>
+        </div>
+
+        <!-- Free Style Handwritten Arrow & Text pointing to CV Button -->
+        <div class="space-y-3 mb-6">
+          <!-- Action Row: CV, Email & Socials -->
+          <div class="flex flex-wrap items-center gap-3">
+            <a
+              href="https://vighnesh.is-a.dev/resume"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 text-white font-semibold text-sm hover:bg-indigo-500 active:scale-95 transition-all shadow-md shadow-indigo-600/25 ring-2 ring-indigo-500/20"
+            >
+              <i
+                data-lucide="file-down"
+                class="w-4 h-4"
+              ></i>
+              <span>Download CV</span>
+            </a>
+            <a
+              href="mailto:vighneshpawar004@gmail.com"
+              class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-zinc-200 font-medium text-sm hover:bg-slate-50 dark:hover:bg-zinc-800 transition-all shadow-sm min-w-0 max-w-full overflow-hidden"
+            >
+              <i
+                data-lucide="mail"
+                class="w-4 h-4 text-indigo-600 dark:text-indigo-400 shrink-0"
+              ></i>
+              <span class="hidden sm:inline truncate">
+                vighneshpawar004@gmail.com
+              </span>
+              <span class="sm:hidden">Email Me</span>
+            </a>
+            <!-- Social icons always in a row, wrap naturally -->
+            <div class="flex items-center gap-2 flex-wrap">
+              <!-- GitHub with inline SVG -->
+              <a
+                href="https://github.com/thevighneshpawar"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 flex items-center justify-center text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white hover:border-indigo-500/50 transition-all shadow-sm"
+                title="GitHub"
+              >
+                <svg
+                  class="w-4 h-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                  ></path>
+                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                </svg>
+              </a>
+              <!-- LinkedIn with inline SVG -->
+              <a
+                href="https://linkedin.com/in/vighnesh-pawar"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 flex items-center justify-center text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white hover:border-indigo-500/50 transition-all shadow-sm"
+                title="LinkedIn"
+              >
+                <svg
+                  class="w-4 h-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect
+                    width="4"
+                    height="12"
+                    x="2"
+                    y="9"
+                  ></rect>
+                  <circle
+                    cx="4"
+                    cy="4"
+                    r="2"
+                  ></circle>
+                </svg>
+              </a>
+              <a
+                href="tel:+919518562155"
+                class="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 flex items-center justify-center text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white hover:border-indigo-500/50 transition-all shadow-sm"
+                title="+91 9518562155"
+              >
+                <i
+                  data-lucide="phone"
+                  class="w-4 h-4"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- end space-y-3 mb-6 -->
+
+        <!-- Quick Metrics Strip -->
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-6 mt-8 border-t border-slate-200 dark:border-zinc-850"
+        >
+          <div
+            class="p-3.5 rounded-2xl bg-white dark:bg-zinc-900/40 border border-slate-200 dark:border-zinc-800/80 shadow-sm"
+          >
+            <p
+              class="text-lg sm:text-2xl font-bold text-slate-900 dark:text-white font-mono truncate"
+            >
+              Appbell
+            </p>
+            <p class="text-xs text-slate-500 dark:text-zinc-400 mt-0.5">
+              Software Engineer
+            </p>
+          </div>
+          <div
+            class="p-3.5 rounded-2xl bg-white dark:bg-zinc-900/40 border border-slate-200 dark:border-zinc-800/80 shadow-sm"
+          >
+            <p
+              class="text-lg sm:text-2xl font-bold text-indigo-600 dark:text-indigo-400 font-mono"
+            >
+              8.44
+            </p>
+            <p class="text-xs text-slate-500 dark:text-zinc-400 mt-0.5">
+              B.Tech CGPA
+            </p>
+          </div>
+          <div
+            class="p-3.5 rounded-2xl bg-white dark:bg-zinc-900/40 border border-slate-200 dark:border-zinc-800/80 shadow-sm col-span-2 sm:col-span-1"
+          >
+            <p
+              class="text-lg sm:text-2xl font-bold text-slate-900 dark:text-white font-mono"
+            >
+              React+Java
+            </p>
+            <p class="text-xs text-slate-500 dark:text-zinc-400 mt-0.5">
+              Core Stack
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== WORK EXPERIENCE SECTION ===== -->
+      <section
+        id="experience"
+        class="space-y-6"
+      >
+        <!-- Section Header -->
+        <div
+          class="flex items-end justify-between border-b border-slate-200 dark:border-zinc-850 pb-4"
+        >
           <div>
-            <label class="block text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-zinc-400 mb-1.5">Message</label>
-            <textarea name="message" rows="5" placeholder="Tell me about your project or opportunity..." required
-              class="w-full px-4 py-3 rounded-xl bg-white dark:bg-zinc-950 border border-slate-300 dark:border-zinc-800 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-zinc-600 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"></textarea>
-          </div>
-
-          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2">
-            <span class="text-xs text-slate-500 dark:text-zinc-500 min-w-0 overflow-hidden">
-              Direct email: <a href="mailto:vighneshpawar004@gmail.com" class="text-indigo-600 dark:text-indigo-400 hover:underline break-all">vighneshpawar004@gmail.com</a>
+            <span
+              class="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 block mb-1"
+            >
+              Career Journey
             </span>
-            <button type="submit"
-              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 text-white font-semibold text-sm hover:bg-indigo-500 active:scale-95 transition-all shadow-md shadow-indigo-600/25 cursor-pointer shrink-0">
-              <span>Send Message</span>
-              <i data-lucide="send" class="w-4 h-4"></i>
-            </button>
+            <h2
+              class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white"
+            >
+              Work Experience
+            </h2>
           </div>
-        </form>
+        </div>
+
+        <div class="timeline-stem">
+          <!-- Experience 1: Appbell Technologies -->
+          <div class="timeline-node">
+            <div class="timeline-bullet"></div>
+            <div
+              class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1.5"
+            >
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                Associate Software Engineer
+              </h3>
+              <span
+                class="text-xs font-mono text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/40 px-2.5 py-0.5 rounded-full border border-indigo-200 dark:border-indigo-800/60 w-fit"
+              >
+                Sept 2025 — Jun 2026
+              </span>
+            </div>
+            <p
+              class="text-sm font-medium text-slate-500 dark:text-zinc-400 mb-3"
+            >
+              Appbell Technologies Pvt. Ltd.
+            </p>
+            <ul
+              class="space-y-2 text-xs sm:text-sm text-slate-600 dark:text-zinc-300"
+            >
+              <li class="flex items-start gap-2">
+                <span
+                  class="text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5"
+                >
+                  •
+                </span>
+                <span>
+                  Developing and maintaining high-performance user interface
+                  components using
+                  <strong class="text-slate-900 dark:text-white">
+                    React.js
+                  </strong>
+                  for production web applications.
+                </span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span
+                  class="text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5"
+                >
+                  •
+                </span>
+                <span>
+                  Engineering robust backend application modules using
+                  <strong class="text-slate-900 dark:text-white">Java</strong>
+                  with the company's in-house architecture framework.
+                </span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span
+                  class="text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5"
+                >
+                  •
+                </span>
+                <span>
+                  Managing and optimizing relational database schemas and data
+                  operations using
+                  <strong class="text-slate-900 dark:text-white">SQL</strong>
+                  .
+                </span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span
+                  class="text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5"
+                >
+                  •
+                </span>
+                <span>
+                  Contributing to mobile app development using
+                  <strong class="text-slate-900 dark:text-white">
+                    React Native
+                  </strong>
+                  for seamless cross-platform experiences.
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Experience 2: Tech spot Infotech -->
+          <div class="timeline-node">
+            <div class="timeline-bullet"></div>
+            <div
+              class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1.5"
+            >
+              <h3 class="text-base font-bold text-slate-900 dark:text-white">
+                Web Development Intern
+              </h3>
+              <span
+                class="text-xs font-mono text-slate-600 dark:text-zinc-400 bg-slate-100 dark:bg-zinc-900 px-2.5 py-0.5 rounded-full border border-slate-200 dark:border-zinc-800 w-fit"
+              >
+                Feb 2024 — May 2024
+              </span>
+            </div>
+            <p
+              class="text-sm font-medium text-slate-500 dark:text-zinc-400 mb-3"
+            >
+              Tech spot Infotech Pvt. Ltd. · Sangli, Maharashtra
+            </p>
+            <ul
+              class="space-y-2 text-xs sm:text-sm text-slate-600 dark:text-zinc-300"
+            >
+              <li class="flex items-start gap-2">
+                <span
+                  class="text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5"
+                >
+                  •
+                </span>
+                <span>
+                  Collaborated with engineering teams to construct responsive
+                  client web interfaces and improve UI layouts.
+                </span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span
+                  class="text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5"
+                >
+                  •
+                </span>
+                <span>
+                  Maintained backend database workflows and addressed
+                  cross-browser compatibility issues.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FEATURED PROJECTS SECTION ===== -->
+      <section
+        id="projects"
+        class="space-y-6"
+      >
+        <!-- Section Header -->
+        <div
+          class="flex items-end justify-between border-b border-slate-200 dark:border-zinc-850 pb-4"
+        >
+          <div>
+            <span
+              class="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 block mb-1"
+            >
+              Portfolio
+            </span>
+            <h2
+              class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white"
+            >
+              Featured Projects
+            </h2>
+          </div>
+          <span
+            class="text-xs text-slate-500 dark:text-zinc-500 font-mono hidden sm:inline-block"
+          >
+            From Resume & Production
+          </span>
+        </div>
+
+        <!-- 2-Column Responsive Card Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <!-- Project 1: Edu Test Portal (MERN + Gemini AI) -->
+          <article
+            class="project-card rounded-2xl overflow-hidden flex flex-col justify-between group"
+          >
+            <div>
+              <div
+                class="relative h-44 overflow-hidden bg-slate-100 dark:bg-zinc-900 border-b border-slate-200 dark:border-zinc-800/80"
+              >
+                <img
+                  src="assets/images/quiz.png"
+                  alt="Edu Test Portal"
+                  class="project-img w-full h-full object-cover"
+                />
+                <span
+                  class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-md text-[10px] font-mono font-semibold bg-white/90 dark:bg-zinc-950/80 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-500/30 backdrop-blur-md shadow-sm"
+                >
+                  Gemini AI · MERN
+                </span>
+              </div>
+              <div class="p-5">
+                <h3
+                  class="text-base font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors mb-1.5 flex items-center justify-between"
+                >
+                  <span>Edu Test Portal</span>
+                  <i
+                    data-lucide="arrow-up-right"
+                    class="w-4 h-4 text-slate-400 dark:text-zinc-500 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  ></i>
+                </h3>
+                <p
+                  class="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4"
+                >
+                  Full-featured online quiz platform with authentication, quiz
+                  creation, leaderboard, and history. Integrated AI-powered quiz
+                  generation via
+                  <strong
+                    class="text-slate-800 dark:text-zinc-200 font-semibold"
+                  >
+                    Gemini API
+                  </strong>
+                  and media storage with Cloudinary.
+                </p>
+              </div>
+            </div>
+            <div class="px-5 pb-5 pt-0">
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  React.js
+                </span>
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  Node.js
+                </span>
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  MongoDB
+                </span>
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-indigo-50 dark:bg-zinc-900 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800/50"
+                >
+                  Gemini API
+                </span>
+              </div>
+              <div
+                class="flex items-center gap-2 pt-3 border-t border-slate-200 dark:border-zinc-850"
+              >
+                <a
+                  href="https://mern-quiz-frontend.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-indigo-600 text-white hover:bg-indigo-500 transition-colors shadow-sm"
+                >
+                  <i
+                    data-lucide="external-link"
+                    class="w-3.5 h-3.5"
+                  ></i>
+                  <span>Live Demo</span>
+                </a>
+                <a
+                  href="https://github.com/thevighneshpawar/mern-quiz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg text-slate-700 dark:text-zinc-300 bg-slate-100 dark:bg-zinc-900 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-zinc-800 transition-colors"
+                >
+                  <svg
+                    class="w-3.5 h-3.5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    ></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                  <span>GitHub Link</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: E-commerce Website (MERN + Razorpay) -->
+          <article
+            class="project-card rounded-2xl overflow-hidden flex flex-col justify-between group"
+          >
+            <div>
+              <div
+                class="relative h-44 overflow-hidden bg-slate-100 dark:bg-zinc-900 border-b border-slate-200 dark:border-zinc-800/80"
+              >
+                <img
+                  src="assets/images/ecom.png"
+                  alt="E-Commerce Website"
+                  class="project-img w-full h-full object-cover"
+                />
+                <span
+                  class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-md text-[10px] font-mono font-semibold bg-white/90 dark:bg-zinc-950/80 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/30 backdrop-blur-md shadow-sm"
+                >
+                  Razorpay · MERN
+                </span>
+              </div>
+              <div class="p-5">
+                <h3
+                  class="text-base font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors mb-1.5 flex items-center justify-between"
+                >
+                  <span>E-Commerce Website</span>
+                  <i
+                    data-lucide="arrow-up-right"
+                    class="w-4 h-4 text-slate-400 dark:text-zinc-500 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  ></i>
+                </h3>
+                <p
+                  class="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4"
+                >
+                  Full-featured online store with product filtering, cart,
+                  checkout with
+                  <strong
+                    class="text-slate-800 dark:text-zinc-200 font-semibold"
+                  >
+                    Razorpay integration
+                  </strong>
+                  , and order tracking. Includes an admin panel for managing
+                  products and orders.
+                </p>
+              </div>
+            </div>
+            <div class="px-5 pb-5 pt-0">
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  React.js
+                </span>
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  Node.js
+                </span>
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  MongoDB
+                </span>
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  Razorpay
+                </span>
+              </div>
+              <div
+                class="flex items-center gap-2 pt-3 border-t border-slate-200 dark:border-zinc-850"
+              >
+                <a
+                  href="https://ecommerce-frontend-jet-one.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-indigo-600 text-white hover:bg-indigo-500 transition-colors shadow-sm"
+                >
+                  <i
+                    data-lucide="external-link"
+                    class="w-3.5 h-3.5"
+                  ></i>
+                  <span>Live Demo</span>
+                </a>
+                <a
+                  href="https://github.com/thevighneshpawar/ecommerce-mern"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg text-slate-700 dark:text-zinc-300 bg-slate-100 dark:bg-zinc-900 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-zinc-800 transition-colors"
+                >
+                  <svg
+                    class="w-3.5 h-3.5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    ></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                  <span>GitHub Link</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Automated Payment & SMM Service -->
+          <article
+            class="project-card rounded-2xl overflow-hidden flex flex-col justify-between group"
+          >
+            <div>
+              <div
+                class="relative h-44 overflow-hidden bg-slate-100 dark:bg-zinc-900 border-b border-slate-200 dark:border-zinc-800/80"
+              >
+                <img
+                  src="assets/images/auto.png"
+                  alt="Automated Payment"
+                  class="project-img w-full h-full object-cover"
+                />
+                <span
+                  class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-md text-[10px] font-mono font-semibold bg-white/90 dark:bg-zinc-950/80 text-sky-600 dark:text-cyan-400 border border-sky-200 dark:border-cyan-500/30 backdrop-blur-md shadow-sm"
+                >
+                  Paytm API · Firebase
+                </span>
+              </div>
+              <div class="p-5">
+                <h3
+                  class="text-base font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors mb-1.5 flex items-center justify-between"
+                >
+                  <span>Automated Payment & SMM Service</span>
+                  <i
+                    data-lucide="arrow-up-right"
+                    class="w-4 h-4 text-slate-400 dark:text-zinc-500 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  ></i>
+                </h3>
+                <p
+                  class="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4"
+                >
+                  Full-stack app to automate SMM service orders. Implemented
+                  payment status tracking using
+                  <strong
+                    class="text-slate-800 dark:text-zinc-200 font-semibold"
+                  >
+                    Paytm transaction APIs
+                  </strong>
+                  along with SMM panel API integration.
+                </p>
+              </div>
+            </div>
+            <div class="px-5 pb-5 pt-0">
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  React.js
+                </span>
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  Firebase
+                </span>
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  Node.js
+                </span>
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  Paytm API
+                </span>
+              </div>
+              <div
+                class="flex items-center gap-2 pt-3 border-t border-slate-200 dark:border-zinc-850"
+              >
+                <a
+                  href="https://autolikes.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-indigo-600 text-white hover:bg-indigo-500 transition-colors shadow-sm"
+                >
+                  <i
+                    data-lucide="external-link"
+                    class="w-3.5 h-3.5"
+                  ></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Code Compiler -->
+          <article
+            class="project-card rounded-2xl overflow-hidden flex flex-col justify-between group"
+          >
+            <div>
+              <div
+                class="relative h-44 overflow-hidden bg-slate-100 dark:bg-zinc-900 border-b border-slate-200 dark:border-zinc-800/80"
+              >
+                <img
+                  src="assets/images/code.png"
+                  alt="Online Code Compiler"
+                  class="project-img w-full h-full object-cover"
+                />
+                <span
+                  class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-md text-[10px] font-mono font-semibold bg-white/90 dark:bg-zinc-950/80 text-violet-600 dark:text-violet-400 border border-violet-200 dark:border-violet-500/30 backdrop-blur-md shadow-sm"
+                >
+                  Dev Tool
+                </span>
+              </div>
+              <div class="p-5">
+                <h3
+                  class="text-base font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors mb-1.5 flex items-center justify-between"
+                >
+                  <span>Online Code Compiler</span>
+                  <i
+                    data-lucide="arrow-up-right"
+                    class="w-4 h-4 text-slate-400 dark:text-zinc-500 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  ></i>
+                </h3>
+                <p
+                  class="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4"
+                >
+                  Web code runner executing C, C++, Java, and Python via the
+                  Judge0 API. Features syntax highlighting and GitHub Gist
+                  syncing.
+                </p>
+              </div>
+            </div>
+            <div class="px-5 pb-5 pt-0">
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  Judge0 API
+                </span>
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  CodeMirror
+                </span>
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  Node.js
+                </span>
+              </div>
+              <div
+                class="flex items-center gap-2 pt-3 border-t border-slate-200 dark:border-zinc-850"
+              >
+                <a
+                  href="https://code-editor-mwsb.onrender.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-indigo-600 text-white hover:bg-indigo-500 transition-colors shadow-sm"
+                >
+                  <i
+                    data-lucide="external-link"
+                    class="w-3.5 h-3.5"
+                  ></i>
+                  <span>Live Demo</span>
+                </a>
+                <a
+                  href="https://github.com/thevighneshpawar/code-editor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg text-slate-700 dark:text-zinc-300 bg-slate-100 dark:bg-zinc-900 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-zinc-800 transition-colors"
+                >
+                  <svg
+                    class="w-3.5 h-3.5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    ></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: College Notes -->
+          <article
+            class="project-card rounded-2xl overflow-hidden flex flex-col justify-between group"
+          >
+            <div>
+              <div
+                class="relative h-44 overflow-hidden bg-slate-100 dark:bg-zinc-900 border-b border-slate-200 dark:border-zinc-800/80"
+              >
+                <img
+                  src="assets/images/notes-web.png"
+                  alt="College Notes Web"
+                  class="project-img w-full h-full object-cover"
+                />
+                <span
+                  class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-md text-[10px] font-mono font-semibold bg-white/90 dark:bg-zinc-950/80 text-amber-600 dark:text-amber-400 border border-amber-200 dark:border-amber-500/30 backdrop-blur-md shadow-sm"
+                >
+                  Resource Hub
+                </span>
+              </div>
+              <div class="p-5">
+                <h3
+                  class="text-base font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors mb-1.5 flex items-center justify-between"
+                >
+                  <span>College Notes & Resources</span>
+                  <i
+                    data-lucide="arrow-up-right"
+                    class="w-4 h-4 text-slate-400 dark:text-zinc-500 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  ></i>
+                </h3>
+                <p
+                  class="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4"
+                >
+                  Academic portal built for university engineering students to
+                  browse, organize, and download curated semester lecture notes
+                  and study resources.
+                </p>
+              </div>
+            </div>
+            <div class="px-5 pb-5 pt-0">
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  HTML5
+                </span>
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  CSS3
+                </span>
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  JavaScript
+                </span>
+              </div>
+              <div
+                class="flex items-center gap-2 pt-3 border-t border-slate-200 dark:border-zinc-850"
+              >
+                <a
+                  href="https://batunotes.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-indigo-600 text-white hover:bg-indigo-500 transition-colors shadow-sm"
+                >
+                  <i
+                    data-lucide="external-link"
+                    class="w-3.5 h-3.5"
+                  ></i>
+                  <span>Live Demo</span>
+                </a>
+                <a
+                  href="https://github.com/thevighneshpawar/collegenotes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg text-slate-700 dark:text-zinc-300 bg-slate-100 dark:bg-zinc-900 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-zinc-800 transition-colors"
+                >
+                  <svg
+                    class="w-3.5 h-3.5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    ></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Personal Portfolio -->
+          <article
+            class="project-card rounded-2xl overflow-hidden flex flex-col justify-between group"
+          >
+            <div>
+              <div
+                class="relative h-44 overflow-hidden bg-slate-100 dark:bg-zinc-900 border-b border-slate-200 dark:border-zinc-800/80"
+              >
+                <img
+                  src="assets/images/personal-portfolio.png"
+                  alt="Personal Portfolio"
+                  class="project-img w-full h-full object-cover"
+                />
+                <span
+                  class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-md text-[10px] font-mono font-semibold bg-white/90 dark:bg-zinc-950/80 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-700/50 backdrop-blur-md shadow-sm"
+                >
+                  Minimal Web
+                </span>
+              </div>
+              <div class="p-5">
+                <h3
+                  class="text-base font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors mb-1.5 flex items-center justify-between"
+                >
+                  <span>Minimalist Developer Portfolio</span>
+                  <i
+                    data-lucide="arrow-up-right"
+                    class="w-4 h-4 text-slate-400 dark:text-zinc-500 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  ></i>
+                </h3>
+                <p
+                  class="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4"
+                >
+                  Clean developer portfolio showcasing engineering projects,
+                  academic background, and technical expertise with dark
+                  aesthetics and smooth interactions.
+                </p>
+              </div>
+            </div>
+            <div class="px-5 pb-5 pt-0">
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  Tailwind CSS
+                </span>
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  JavaScript
+                </span>
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-800"
+                >
+                  GitHub Pages
+                </span>
+              </div>
+              <div
+                class="flex items-center gap-2 pt-3 border-t border-slate-200 dark:border-zinc-850"
+              >
+                <a
+                  href="https://vighnesh.is-a.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-indigo-600 text-white hover:bg-indigo-500 transition-colors shadow-sm"
+                >
+                  <i
+                    data-lucide="external-link"
+                    class="w-3.5 h-3.5"
+                  ></i>
+                  <span>Live Demo</span>
+                </a>
+                <a
+                  href="https://github.com/thevighneshpawar/personalportfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg text-slate-700 dark:text-zinc-300 bg-slate-100 dark:bg-zinc-900 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-zinc-800 transition-colors"
+                >
+                  <svg
+                    class="w-3.5 h-3.5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    ></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== SKILLS & TOOLBOX SECTION ===== -->
+      <section
+        id="skills"
+        class="space-y-6"
+      >
+        <div
+          class="flex items-end justify-between border-b border-slate-200 dark:border-zinc-850 pb-4"
+        >
+          <div>
+            <span
+              class="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 block mb-1"
+            >
+              Toolbox
+            </span>
+            <h2
+              class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white"
+            >
+              Skills & Technologies
+            </h2>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Programming & Core -->
+          <div
+            class="p-5 rounded-2xl bg-white dark:bg-zinc-900/50 border border-slate-200 dark:border-zinc-800 shadow-sm"
+          >
+            <div
+              class="flex items-center gap-2 mb-3.5 text-indigo-600 dark:text-indigo-400"
+            >
+              <i
+                data-lucide="code-2"
+                class="w-4 h-4"
+              ></i>
+              <h3
+                class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white"
+              >
+                Programming & Core
+              </h3>
+            </div>
+            <div class="flex flex-wrap gap-1.5">
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                Java
+              </span>
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                C
+              </span>
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                C++
+              </span>
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                JavaScript
+              </span>
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                Data Structures
+              </span>
+            </div>
+          </div>
+
+          <!-- Web & Mobile Frameworks -->
+          <div
+            class="p-5 rounded-2xl bg-white dark:bg-zinc-900/50 border border-slate-200 dark:border-zinc-800 shadow-sm"
+          >
+            <div
+              class="flex items-center gap-2 mb-3.5 text-indigo-600 dark:text-indigo-400"
+            >
+              <i
+                data-lucide="layout"
+                class="w-4 h-4"
+              ></i>
+              <h3
+                class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white"
+              >
+                Web & Mobile Frameworks
+              </h3>
+            </div>
+            <div class="flex flex-wrap gap-1.5">
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                React.js
+              </span>
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                React Native
+              </span>
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                Node.js
+              </span>
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                Express.js
+              </span>
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                Tailwind CSS
+              </span>
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                HTML & CSS
+              </span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div
+            class="p-5 rounded-2xl bg-white dark:bg-zinc-900/50 border border-slate-200 dark:border-zinc-800 shadow-sm"
+          >
+            <div
+              class="flex items-center gap-2 mb-3.5 text-indigo-600 dark:text-indigo-400"
+            >
+              <i
+                data-lucide="database"
+                class="w-4 h-4"
+              ></i>
+              <h3
+                class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white"
+              >
+                Databases
+              </h3>
+            </div>
+            <div class="flex flex-wrap gap-1.5">
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                SQL
+              </span>
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                MongoDB
+              </span>
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                Firebase
+              </span>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div
+            class="p-5 rounded-2xl bg-white dark:bg-zinc-900/50 border border-slate-200 dark:border-zinc-800 shadow-sm"
+          >
+            <div
+              class="flex items-center gap-2 mb-3.5 text-indigo-600 dark:text-indigo-400"
+            >
+              <i
+                data-lucide="wrench"
+                class="w-4 h-4"
+              ></i>
+              <h3
+                class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white"
+              >
+                Tools & Cloud
+              </h3>
+            </div>
+            <div class="flex flex-wrap gap-1.5">
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                Git & GitHub
+              </span>
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                Vercel
+              </span>
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                Insomnia
+              </span>
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                Kong OSS
+              </span>
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-zinc-950 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800"
+              >
+                Postman
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CERTIFICATIONS & SPECIALIZATIONS ===== -->
+      <section
+        id="certifications"
+        class="space-y-6"
+      >
+        <div
+          class="flex items-end justify-between border-b border-slate-200 dark:border-zinc-850 pb-4"
+        >
+          <div>
+            <span
+              class="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 block mb-1"
+            >
+              Knowledge & Growth
+            </span>
+            <h2
+              class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white"
+            >
+              Certifications & Courses
+            </h2>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 relative overflow-hidden">
+          <div
+            class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2"
+          >
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+              Full Stack Engineering with MERN Stack
+            </h3>
+            <span
+              class="text-xs font-mono text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/40 px-2.5 py-0.5 rounded-full border border-indigo-200 dark:border-indigo-800/60 w-fit"
+            >
+              Specialization
+            </span>
+          </div>
+          <p
+            class="text-xs sm:text-sm text-slate-600 dark:text-zinc-300 leading-relaxed"
+          >
+            Covered MERN stack development, TypeScript, Next.js, Test-Driven
+            Development (TDD), Docker, Apache Kafka, PostgreSQL, and ORM
+            workflows. Built scalable, real-world applications integrating
+            frontend, backend, and DevOps tooling.
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== EDUCATION SECTION ===== -->
+      <section
+        id="education"
+        class="space-y-6"
+      >
+        <div
+          class="flex items-end justify-between border-b border-slate-200 dark:border-zinc-850 pb-4"
+        >
+          <div>
+            <span
+              class="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 block mb-1"
+            >
+              Academic Background
+            </span>
+            <h2
+              class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white"
+            >
+              Education
+            </h2>
+          </div>
+        </div>
+
+        <div class="timeline-stem">
+          <!-- B.Tech -->
+          <div class="timeline-node">
+            <div class="timeline-bullet"></div>
+            <div
+              class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1"
+            >
+              <h3 class="text-base font-bold text-slate-900 dark:text-white">
+                B.Tech in Computer Science and Engineering
+              </h3>
+              <span
+                class="text-xs font-mono text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-zinc-900 px-2.5 py-0.5 rounded-full border border-indigo-200 dark:border-zinc-800 w-fit"
+              >
+                2021 — 2025
+              </span>
+            </div>
+            <p class="text-sm text-slate-500 dark:text-zinc-400">
+              Adarsh Institute of Technology and Research Centre, Vita
+            </p>
+            <p class="text-xs text-slate-600 dark:text-zinc-500 font-mono mt-1">
+              Cumulative CGPA:
+              <strong class="text-slate-800 dark:text-zinc-200">
+                8.44 / 10
+              </strong>
+            </p>
+          </div>
+
+          <!-- HSC -->
+          <div class="timeline-node">
+            <div class="timeline-bullet"></div>
+            <div
+              class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1"
+            >
+              <h3 class="text-base font-bold text-slate-900 dark:text-white">
+                Class 12 (HSC Board)
+              </h3>
+              <span
+                class="text-xs font-mono text-slate-600 dark:text-zinc-400 bg-slate-100 dark:bg-zinc-900 px-2.5 py-0.5 rounded-full border border-slate-200 dark:border-zinc-800 w-fit"
+              >
+                2020 — 2021
+              </span>
+            </div>
+            <p class="text-sm text-slate-500 dark:text-zinc-400">
+              Dr. Patangrao Kadam Junior College, Kundal
+            </p>
+            <p class="text-xs text-slate-600 dark:text-zinc-500 font-mono mt-1">
+              Score:
+              <strong class="text-slate-800 dark:text-zinc-200">83.6%</strong>
+            </p>
+          </div>
+
+          <!-- SSC -->
+          <div class="timeline-node">
+            <div class="timeline-bullet"></div>
+            <div
+              class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1"
+            >
+              <h3 class="text-base font-bold text-slate-900 dark:text-white">
+                Class 10 (SSC Board)
+              </h3>
+              <span
+                class="text-xs font-mono text-slate-600 dark:text-zinc-400 bg-slate-100 dark:bg-zinc-900 px-2.5 py-0.5 rounded-full border border-slate-200 dark:border-zinc-800 w-fit"
+              >
+                2018 — 2019
+              </span>
+            </div>
+            <p class="text-sm text-slate-500 dark:text-zinc-400">
+              Modern Education Society, Vita
+            </p>
+            <p class="text-xs text-slate-600 dark:text-zinc-500 font-mono mt-1">
+              Score:
+              <strong class="text-slate-800 dark:text-zinc-200">87.4%</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT SECTION ===== -->
+      <section
+        id="contact"
+        class="space-y-6"
+      >
+        <div
+          class="flex items-end justify-between border-b border-slate-200 dark:border-zinc-850 pb-4"
+        >
+          <div>
+            <span
+              class="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 block mb-1"
+            >
+              Get In Touch
+            </span>
+            <h2
+              class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white"
+            >
+              Let's Connect
+            </h2>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-3xl p-6 sm:p-8">
+          <p
+            class="text-slate-600 dark:text-zinc-400 text-sm sm:text-base leading-relaxed mb-6"
+          >
+            I'm always open to discussing new software engineering roles,
+            full-stack opportunities, or tech collaborations. Reach out below or
+            drop an email directly.
+          </p>
+
+          <!-- Inline Status Feedback -->
+          <div
+            id="formStatus"
+            class="hidden mb-5"
+          ></div>
+
+          <!-- Contact Form -->
+          <form
+            id="contactForm"
+            class="space-y-4"
+          >
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label
+                  class="block text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-zinc-400 mb-1.5"
+                >
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  name="fullName"
+                  placeholder="e.g. Alex Smith"
+                  required
+                  class="w-full px-4 py-3 rounded-xl bg-white dark:bg-zinc-950 border border-slate-300 dark:border-zinc-800 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-zinc-600 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-zinc-400 mb-1.5"
+                >
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="alex@example.com"
+                  required
+                  class="w-full px-4 py-3 rounded-xl bg-white dark:bg-zinc-950 border border-slate-300 dark:border-zinc-800 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-zinc-600 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label
+                class="block text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-zinc-400 mb-1.5"
+              >
+                Message
+              </label>
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Tell me about your project or opportunity..."
+                required
+                class="w-full px-4 py-3 rounded-xl bg-white dark:bg-zinc-950 border border-slate-300 dark:border-zinc-800 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-zinc-600 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
+              ></textarea>
+            </div>
+
+            <div
+              class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2"
+            >
+              <span
+                class="text-xs text-slate-500 dark:text-zinc-500 min-w-0 overflow-hidden"
+              >
+                Direct email:
+                <a
+                  href="mailto:vighneshpawar004@gmail.com"
+                  class="text-indigo-600 dark:text-indigo-400 hover:underline break-all"
+                >
+                  vighneshpawar004@gmail.com
+                </a>
+              </span>
+              <button
+                type="submit"
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 text-white font-semibold text-sm hover:bg-indigo-500 active:scale-95 transition-all shadow-md shadow-indigo-600/25 cursor-pointer shrink-0"
+              >
+                <span>Send Message</span>
+                <i
+                  data-lucide="send"
+                  class="w-4 h-4"
+                ></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= MINIMAL FOOTER ================= -->
+    <footer
+      class="border-t border-slate-200 dark:border-zinc-850 py-10 text-center text-xs text-slate-500 dark:text-zinc-500"
+    >
+      <div
+        class="max-w-3xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4"
+      >
+        <p>© 2026 Vighnesh Pawar · Vita, Maharashtra</p>
+        <div class="flex items-center gap-4 text-slate-600 dark:text-zinc-400">
+          <a
+            href="https://github.com/thevighneshpawar"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-slate-900 dark:hover:text-white transition-colors"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/vighnesh-pawar"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-slate-900 dark:hover:text-white transition-colors"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="mailto:vighneshpawar004@gmail.com"
+            class="hover:text-slate-900 dark:hover:text-white transition-colors"
+          >
+            Email
+          </a>
+          <a
+            href="https://vighnesh.is-a.dev/resume"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+          >
+            View CV
+          </a>
+        </div>
       </div>
-    </section>
+    </footer>
 
-  </main>
-
-  <!-- ================= MINIMAL FOOTER ================= -->
-  <footer class="border-t border-slate-200 dark:border-zinc-850 py-10 text-center text-xs text-slate-500 dark:text-zinc-500">
-    <div class="max-w-3xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p>© 2026 Vighnesh Pawar · Vita, Maharashtra</p>
-      <div class="flex items-center gap-4 text-slate-600 dark:text-zinc-400">
-        <a href="https://github.com/thevighneshpawar" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 dark:hover:text-white transition-colors">GitHub</a>
-        <a href="https://linkedin.com/in/vighnesh-pawar" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 dark:hover:text-white transition-colors">LinkedIn</a>
-        <a href="mailto:vighneshpawar004@gmail.com" class="hover:text-slate-900 dark:hover:text-white transition-colors">Email</a>
-        <a href="https://vighnesh.is-a.dev/resume" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">View CV</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="assets/index.js"></script>
-</body>
-
+    <!-- Scripts -->
+    <script src="assets/index.js"></script>
+  </body>
 </html>
